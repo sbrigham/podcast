@@ -5,11 +5,6 @@ class Show extends \Eloquent {
 
     protected $table = 'shows';
 
-    public function rss()
-    {
-        return $this->belongsTo('RssFeed', 'id');
-    }
-
     public function episodes()
     {
         return $this->hasMany('Episodes');
