@@ -11,6 +11,23 @@
 |
 */
 
+Route::group(['prefix' => 'admin', 'before' => 'auth'], function() {
+    Route::get('/', 'AdminDashboardController@index');
+
+    Route::resource('rss', 'RssFeedController',
+        array('except' => array('show')));
+
+    Route::resource('user', 'AdminUsersController',
+        array('except' => array('show')));
+
+    Route::resource('category', 'CategoryController');
+});
+
+Route::get('login', 'SessionsController@create');
+Route::get('logout', 'SessionsController@destroy');
+Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create', 'destroy' , 'store']]);
+
+
 Route::get('/', function()
 {
 	return View::make('hello');

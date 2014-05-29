@@ -4,7 +4,9 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+        "fzaninotto/faker": "1.4.*@dev",
+        "simplepie/simplepie": "dev-master"
 	},
     "require-dev": {
         "way/generators": "2.*"
@@ -17,7 +19,10 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+        "psr-0": {
+            "Podcast": "app/"
+        }
 	},
 	"scripts": {
 		"post-install-cmd": [
