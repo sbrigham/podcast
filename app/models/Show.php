@@ -7,6 +7,16 @@ class Show extends \Eloquent {
 
     public function episodes()
     {
-        return $this->hasMany('Episodes');
+        return $this->hasMany('Episode', 'show_id', 'id');
+    }
+
+    /**
+     * Paginated posts accessor. Access via $show->posts_paginated
+     *
+     * @return \Illuminate\Pagination\Paginator
+     */
+    public function getEpisodesPaginatedAttribute()
+    {
+        return $this->episodes()->paginate(6);
     }
 }

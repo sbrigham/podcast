@@ -17,7 +17,9 @@ class CreateEpisodesTable extends Migration {
 			$table->integer('show_id')->unsigned()->references('id')->on('shows');
 			$table->string('name');
 			$table->string('description');
-			$table->string('src');
+			$table->text('src');
+			$table->string('image_src')->nullable();
+            $table->dateTime('published_at');
 			$table->timestamps();
 		});
 	}

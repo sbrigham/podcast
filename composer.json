@@ -5,11 +5,14 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-        "fzaninotto/faker": "1.4.*@dev",
+        "fzaninotto/faker": "1.5.*@dev",
         "simplepie/simplepie": "dev-master"
 	},
     "require-dev": {
-        "way/generators": "2.*"
+        "way/generators": "2.*",
+        "phpunit/phpunit": "3.7.*",
+        "mockery/mockery": "dev-master",
+        "phpunit/php-invoker": "dev-master"
     },
 	"autoload": {
 		"classmap": [
@@ -21,7 +24,11 @@
 			"app/tests/TestCase.php"
 		],
         "psr-0": {
-            "Podcast": "app/"
+            "Brigham": "app/"
+        },
+        "psr-4": {
+            "Brigham\\" : "app/tests/unit",
+            "Brigham\\" : "app/Acme"
         }
 	},
 	"scripts": {

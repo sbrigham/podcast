@@ -11,3 +11,11 @@
 |
 */
 
+App::bind('Brigham\Podcast\Services\PodcastServiceInterface', 'Brigham\Podcast\Services\PodcastService');
+Artisan::resolve('UpdatePodcastsCommand');
+
+
+App::bind('PodcastCron', function()
+{
+    return new \Brigham\Podcast\Cron\PodcastCron;
+});

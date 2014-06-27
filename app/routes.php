@@ -11,6 +11,10 @@
 |
 */
 
+App::bind('Brigham\Podcast\Repositories\PodcastRepositoryInterface', 'Brigham\Podcast\Repositories\EloquentPodcastRepository');
+App::bind('Brigham\Podcast\Services\PodcastServiceInterface', 'Brigham\Podcast\Services\PodcastService');
+
+// Admin Routes
 Route::group(['prefix' => 'admin', 'before' => 'auth'], function() {
     Route::get('/', 'AdminDashboardController@index');
 
@@ -30,12 +34,14 @@ Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create',
 
 Route::get('/', function()
 {
-	return View::make('hello');
-});
-
-Route::get('/test', function()
-{
-    return 'tester';
+	return View::make('home');
 });
 
 
+Route::get('show', 'ShowController@index');
+Route::get('shows', 'ShowController@index');
+
+// Brigham Front Routes
+Route::get('/{show_id}/about', 'ShowController@show');
+Route::get('/{show_id}', [ 'as'=> 'show', 'uses' => 'EpisodeController@index']);
+Route::get('/{show_id}/episode/{episode_id}', ['as' => 'episode', 'uses' => 'EpisodeController@show']);

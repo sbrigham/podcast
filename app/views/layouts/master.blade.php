@@ -4,21 +4,29 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src = '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
-    {{ HTML::style('css/blog.css'); }}
-    {{ HTML::script('js/chosen.jquery.min.js'); }}
-    {{ HTML::style('css/chosen.min.css'); }}
+    {{ HTML::style('css/layouts/slate/slate.css'); }}
+    {{ HTML::style('css/layouts/slate/bootswatch.less'); }}
+    {{ HTML::style('css/layouts/slate/variables.less'); }}
   </head>
   <body>
-      <div class="blog-masthead">
-        <div class="container">
-            <nav class="blog-nav">
-                <a class="blog-nav-item" href="/">Home</a>
-                <a class="blog-nav-item" href="/blog">Blog</a>
-            </nav>
-        </div>
+  <div class="navbar navbar-default">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Podcast</a>
       </div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Shows</a></li>
+          </ul>
+      </div>
+  </div>
 
-    <div class="container">
+
+    <div class="jumbotron">
         <div style="padding-top:10px">
             @yield('content')
         </div>

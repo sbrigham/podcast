@@ -14,10 +14,11 @@ class CreateShowsTable extends Migration {
 	{
 		Schema::create('shows', function(Blueprint $table) {
 			$table->increments('id');
-            $table->string('rss_feed_src');
+            $table->string('feed_url');
 			$table->string('name');
 			$table->string('description');
 			$table->string('image_src');
+            $table->dateTime('last_build_date')->nullable();
 			$table->timestamps();
 		});
 	}

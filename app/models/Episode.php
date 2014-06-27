@@ -12,6 +12,6 @@ class Episode extends \Eloquent {
 
     public function show()
     {
-        return $this->belongsTo('Show', 'show_id');
+        return $this->belongsTo('Show');
     }
 }

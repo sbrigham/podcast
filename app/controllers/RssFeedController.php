@@ -1,9 +1,14 @@
 <?php
 
-use SimplePie;
+use Brigham\Podcast\Services\PodcastServiceInterface;
 
 class RssFeedController extends \BaseController {
 
+    protected $pod_service;
+    public function __construct(PodcastServiceInterface $pod_service)
+    {
+        $this->pod_service = $pod_service;
+    }
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -31,15 +36,10 @@ class RssFeedController extends \BaseController {
 	 */
 	public function store()
 	{
-		$url = Input::get('url');
-        $feed = new SimplePie();
-        $feed->set_cache_location(storage_path());
-        $feed->set_feed_url($url);
-        $feed->init();
+        // validate url at some point...
+        $this->pod_service->make(Input::get('url'));
 
-        var_dump(get_class_methods($feed->get_item(0)));
-
-        dd($feed->get_item(1)->get_enclosure());
+        return Redirect::back();
 	}
 
 	/**
