@@ -7,5 +7,6 @@ composer.lock
 .DS_Store
 Thumbs.db
 .idea/workspace.xml
+node_modules
 
 tests/_output/*

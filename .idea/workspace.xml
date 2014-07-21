@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gulp/Gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/tests/RoutesTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layouts/slate/master.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/gulpfile.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/.bin/gulp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-notify/.editorconfig" afterPath="" />
@@ -1035,46 +1030,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp/node_modules/vinyl-fs/test/src.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_05_27_024043_create_shows_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_05_27_024043_create_shows_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_05_27_024213_create_episodes_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_05_27_024213_create_episodes_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EpisodeController.php" afterPath="$PROJECT_DIR$/app/controllers/EpisodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/NewPodcastsSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/NewPodcastsSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/lib/PluginError.js" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/lib/PluginError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdater.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdater.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tests/PodcastUpdaterTest.php" afterPath="$PROJECT_DIR$/app/tests/PodcastUpdaterTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Show.php" afterPath="$PROJECT_DIR$/app/models/Show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ShowController.php" afterPath="$PROJECT_DIR$/app/controllers/ShowController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php" afterPath="$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/artisan.php" afterPath="$PROJECT_DIR$/app/start/artisan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/cli.js" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/index.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/show/index.blade.php" afterPath="$PROJECT_DIR$/app/views/show/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/index.js" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/index.js" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/ansi-styles/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/ansi-styles/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash._isnative/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash._isnative/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash._shimkeys/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash._shimkeys/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash.isobject/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash.isobject/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/multipipe/node_modules/duplexer2/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/multipipe/node_modules/duplexer2/node_modules/readable-stream/node_modules/core-util-is/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/through2/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/through2/node_modules/readable-stream/node_modules/core-util-is/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/readme.md" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/ansi-styles/readme.md" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/ansi-styles/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/readme.md" afterPath="$PROJECT_DIR$/node_modules/gulp-phpunit/node_modules/gulp-util/node_modules/chalk/node_modules/strip-ansi/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/show/show.blade.php" afterPath="$PROJECT_DIR$/app/views/show/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1097,35 +1053,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="25" selection-start="4227" selection-end="4227" vertical-scroll-proportion="-15.625" vertical-offset="1410" max-vertical-offset="2985">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functional.suite.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/functional.suite.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="52" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <folding>
-                <marker date="1405660441000" expanded="true" signature="258:306" placeholder="enabled:" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signUpCept.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/functional/signUpCept.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="85" selection-end="85" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -1155,10 +1082,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpisodeController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EpisodeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/EpisodeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="7" selection-start="611" selection-end="611" vertical-scroll-proportion="0.524239" vertical-offset="0" max-vertical-offset="887">
+            <state line="17" column="7" selection-start="323" selection-end="323" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="660">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="45" selection-start="236" selection-end="236" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="57" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.479798" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -1231,7 +1185,6 @@
         <option value="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdater.php" />
         <option value="$PROJECT_DIR$/app/models/Show.php" />
         <option value="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php" />
-        <option value="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/views/show/show.blade.php" />
         <option value="$PROJECT_DIR$/public/css/layouts/slate/master.css" />
         <option value="$PROJECT_DIR$/app/views/show/index.blade.php" />
@@ -1255,15 +1208,15 @@
         <option value="$PROJECT_DIR$/app/views/episode/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ShowController.php" />
         <option value="$PROJECT_DIR$/app/controllers/EpisodeController.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
     <option name="y" value="22" />
     <option name="width" value="960" />
-    <option name="height" value="1054" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1356,7 +1309,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1430,7 +1405,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="22" width="960" height="1054" extended-state="6" />
+    <frame x="0" y="22" width="960" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1439,9 +1414,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30638298" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18370607" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25833333" sideWeight="0.79187816" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25833333" sideWeight="0.79148936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28629443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25833333" sideWeight="0.2071066" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25833333" sideWeight="0.2070922" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1472,16 +1447,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/storage/logs/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="934" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/testing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="135" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdaterInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="270" />
@@ -1610,13 +1575,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/Episode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="550" selection-end="550" vertical-scroll-proportion="0.14407684" vertical-offset="0" max-vertical-offset="937">
           <folding />
         </state>
       </provider>
@@ -1779,7 +1737,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="52" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
           <folding>
-            <marker date="1405660441000" expanded="true" signature="258:306" placeholder="enabled:" />
+            <marker date="1405660441000" expanded="true" signature="-1:-1" placeholder="enabled:" />
           </folding>
         </state>
       </provider>
@@ -1837,7 +1795,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/EpisodeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="7" selection-start="611" selection-end="611" vertical-scroll-proportion="0.524239" vertical-offset="0" max-vertical-offset="887">
+        <state line="17" column="7" selection-start="323" selection-end="323" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="236" selection-end="236" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="57" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.479798" vertical-offset="0" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
