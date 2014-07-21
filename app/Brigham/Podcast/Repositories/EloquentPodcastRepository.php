@@ -29,18 +29,15 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
 
     public function getShow($show_id, $with_episodes = true)
     {
-        // TODO handle pagination at some point
-
         if(! $with_episodes) {
             return Show::where('id', $show_id)->firstOrFail();
         }
-
         return Show::where('id', $show_id)->firstOrFail();
     }
 
     public function getEpisodes($show_id)
     {
-        return Episode::where('show_id', $show_id)->toArray();
+        return Episode::where('show_id', $show_id)->sortBy('published_at')->toArray();
     }
 
     public function getEpisode($id)
@@ -48,9 +45,16 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
         return Episode::find($id);
     }
 
-    public function getShows()
+    /**
+     *
+     * Gets the shows as a paginated collection
+     *
+     * @param int $per_page
+     * @return mixed
+     */
+    public function getShows($per_page = 15)
     {
-        return Show::all()->toArray();
+        return Show::paginate($per_page);
     }
 
     public function saveEpisode($episode)

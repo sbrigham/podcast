@@ -21,8 +21,6 @@ class PodcastUpdater implements PodcastUpdaterInterface {
     public function __construct(PodcastRepositoryInterface $pod_repo)
     {
         $this->pod_repo = $pod_repo;
-        $test = 'what';
-        $test = 'what';
     }
 
     /**
@@ -63,7 +61,7 @@ class PodcastUpdater implements PodcastUpdaterInterface {
                 $episode['show_id'] = $show_id;
                 $this->pod_repo->saveEpisode($episode);
                 $update_count ++;
-                Log::info("Show: {$show_id} added episode: {$episode['title']}");
+                Log::info("Show: {$show_id} added episode: {$episode['name']}");
             }
         }
 

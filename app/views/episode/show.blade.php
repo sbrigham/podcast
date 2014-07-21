@@ -2,15 +2,31 @@
 
 @section('content')
 
-<h1> Episode Details Page </h1>
+<article>
+    <div id="episode_name">
+       <h1> {{ $episode['name'] }}</h1>
+    </div>
+    <div id="episode-img">
+        <img src ="{{ $episode['image_src'] }}" class="img-responsive"/>
+    </div>
+    <div id="episode-desc"> {{ strip_tags($episode['description']) }} </div>
+    <div>
+        <audio controls width="100%">
+            <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
+        </audio>
+    </div>
+</article>
 
-<div> {{ $episode['name'] }} </div>
-<div> <img src ="{{ $episode['image_src'] }}"/> </div>
-<div> {{ $episode['description'] }} </div>
-<div>
-    <audio controls>
-        <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
-    </audio>
-</div>
 
+
+<style>
+    article {
+        color: #FFF;
+    }
+
+    #episode-desc {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+</style>
 @stop

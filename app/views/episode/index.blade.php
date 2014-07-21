@@ -2,16 +2,16 @@
 
 
 @section('content')
-<h1> Show Page </h1>
-
-
 <div id="show_data">
-    <div> {{ $show['name'] }} </div>
-
-    <div>
-        <img src="{{ $show['image_src']}}" class="img-responsive" style="width:50%"/>
+<h3> {{ $show['name'] }} </h3>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ $show['image_src']}}" class="img-responsive"/>
+        </div>
+        <div class="col-md-6">
+            {{ $show['description'] }}
+        </div>
     </div>
-    <div> {{ $show['description'] }}  </div>
 </div>
 <br>
 <br>
@@ -20,21 +20,63 @@
       <div class="row">
           @foreach($row as $item)
           <article class="col col-md-4">
-              <div>  {{ $item['name'] }}  </div>
-              <div>  {{{ strip_tags($item['description']) }}}  </div>
-              <audio controls>
-                  <source src="{{$item['src'] }}" type="audio/mpeg">
-              </audio>
+              <hr>
               <div>
-                  {{ HTML::linkRoute('episode', 'View Episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}
+                  <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
+                      <div class="show-name col-md-7">
+                          {{ $item['name'] }}
+                      </div>
+                      <div class="col-md-5 show-date" style = 'float:left'>
+                          {{ date('F d, Y', strtotime($item['published_at'])) }}
+                      </div>
+                  </a>
+              </div>
+              <div class="audio">
+                  <audio controls>
+                      <source src="{{$item['src'] }}" type="audio/mpeg">
+                  </audio>
+              </div>
+              <div class="show-description">
+                  {{{ strip_tags($item['description']) }}}
               </div>
           </article>
           @endforeach
       </div>
-    <br><br>
     @endforeach
 
     {{ $show->episodes_paginated->links() }}
 </div>
+
+<style>
+    .show-name {
+        font-size:18px;
+        padding-bottom: 5px;
+    }
+
+    .show-name:hover {
+        text-decoration: underline;
+    }
+
+    .show-date {
+        text-align: right;
+        color: #FFF;
+    }
+
+    .show-description {
+        color: #FFF;
+    }
+
+    .audio {
+        padding-bottom: 10px;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    article {
+        padding-bottom: 10px;
+    }
+</style>
 
 @stop

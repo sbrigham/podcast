@@ -17,5 +17,5 @@ Artisan::resolve('UpdatePodcastsCommand');
 
 App::bind('PodcastCron', function()
 {
-    return new \Brigham\Podcast\Cron\PodcastCron;
+    //return new \Brigham\Podcast\Cron\PodcastCron;
 });

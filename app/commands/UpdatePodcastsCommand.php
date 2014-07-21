@@ -41,7 +41,15 @@ class UpdatePodcastsCommand extends Command {
 	 */
 	public function fire()
 	{
-        $this->pod_service->updatePodcasts();
+        $show = $this->option('show');
+
+        if(! is_null($show)) {
+            $this->pod_service->updatePodcast($show);
+        } else {
+            // Update all podcast episodes
+            $this->pod_service->updatePodcasts();
+        }
+
         $this->info('Done!');
 	}
 
@@ -65,7 +73,7 @@ class UpdatePodcastsCommand extends Command {
 	protected function getOptions()
 	{
 		return array(
-			array('example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null),
+			array('show', null, InputOption::VALUE_OPTIONAL, 'Update a specific show\'s episodes', null),
 		);
 	}
 

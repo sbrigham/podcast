@@ -6,13 +6,16 @@
 	"require": {
 		"laravel/framework": "4.1.*",
         "fzaninotto/faker": "1.5.*@dev",
-        "simplepie/simplepie": "dev-master"
+        "simplepie/simplepie": "dev-master",
+        "laracasts/commander" : "~1.0"
 	},
     "require-dev": {
         "way/generators": "2.*",
-        "phpunit/phpunit": "3.7.*",
+        "phpunit/phpunit": "4.1.*",
         "mockery/mockery": "dev-master",
-        "phpunit/php-invoker": "dev-master"
+        "phpunit/php-invoker": "dev-master",
+        "codeception/codeception" : "~2.0",
+        "laracasts/testdummy": "~1.0"
     },
 	"autoload": {
 		"classmap": [

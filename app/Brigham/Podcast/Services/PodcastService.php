@@ -46,5 +46,13 @@ class PodcastService implements PodcastServiceInterface {
                 $pod_updater->updatePodcast($old_show['id'], $pod_builder->getEpisodes());
             }
         }
+
+        // Update the stored last_build_date
+    }
+
+    public function updatePodcast($show_id) {
+        $old_show = $this->pod_repo->getShow($show_id);
+
+        $pod_builder = new PodcastBuilder($old_show['feed_url']);
     }
 }

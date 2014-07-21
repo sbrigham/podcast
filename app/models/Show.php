@@ -17,6 +17,6 @@ class Show extends \Eloquent {
      */
     public function getEpisodesPaginatedAttribute()
     {
-        return $this->episodes()->paginate(6);
+        return $this->episodes()->orderBy('published_at', 'DESC')->paginate(6);
     }
 }

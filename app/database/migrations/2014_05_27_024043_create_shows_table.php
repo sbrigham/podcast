@@ -16,8 +16,9 @@ class CreateShowsTable extends Migration {
 			$table->increments('id');
             $table->string('feed_url');
 			$table->string('name');
-			$table->string('description');
+			$table->text('description');
 			$table->string('image_src');
+			$table->tinyInteger('finite_feed');
             $table->dateTime('last_build_date')->nullable();
 			$table->timestamps();
 		});

@@ -7,6 +7,7 @@
     {{ HTML::style('css/layouts/slate/slate.css'); }}
     {{ HTML::style('css/layouts/slate/bootswatch.less'); }}
     {{ HTML::style('css/layouts/slate/variables.less'); }}
+    {{ HTML::style('css/layouts/slate/master.css'); }}
   </head>
   <body>
   <div class="navbar navbar-default">
@@ -20,7 +21,7 @@
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Shows</a></li>
+              <li class="active"> {{ HTML::linkRoute('shows', 'Shows') }} </li>
           </ul>
       </div>
   </div>

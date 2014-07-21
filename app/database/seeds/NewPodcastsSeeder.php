@@ -2,24 +2,25 @@
 use Brigham\Podcast\Repositories\EloquentPodcastRepository;
 use Brigham\Podcast\Services\PodcastService;
 
-/**
- * Created by PhpStorm.
- * User: spencerbrigham
- * Date: 6/2/14
- * Time: 11:08 PM
- */
-
 class NewPodcastsSeeder extends Seeder {
     public function run()
     {
-        // Currently does not check if any feeds already exist.. update later
+        // TODO Currently does not check if any feeds already exist..
 
         $podcast_feeds = [
             'http://joeroganexp.joerogan.libsynpro.com/rss',
             'http://theadamcarollashow.libsyn.com/rss',
             'http://lavenderhour.libsyn.com/rss',
             'http://nerdist.libsyn.com/rss',
-            'http://feeds.feedburner.com/laraveliopodcast'
+            'http://feeds.feedburner.com/laraveliopodcast',
+            'http://feeds.feedburner.com/TheAdamAndDrewShow',
+            'http://feeds.feedburner.com/AceOnTheHouse',
+            'http://traffic.tfvpodcast.libsyn.com/rss',
+            'http://opieandanthonypodcast.libsyn.com/rss',
+            'http://feeds.soundcloud.com/users/soundcloud:users:38128127/sounds.rss',
+            'http://www.podcastone.com/podcast?categoryID2=331',
+            'http://traffic.tfvpodcast.libsyn.com/rss',
+            'http://deathsquad.libsyn.com/rss'
         ];
 
         $repo = new EloquentPodcastRepository();
