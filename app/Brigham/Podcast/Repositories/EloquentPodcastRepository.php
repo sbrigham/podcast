@@ -42,7 +42,7 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
 
     public function getEpisode($id)
     {
-        return Episode::find($id);
+        return Episode::where('id', $id)->firstOrFail();
     }
 
     /**

@@ -40,3 +40,10 @@ Route::get('shows',['as' =>'shows', 'uses' => 'ShowController@index']);
 Route::get('/{show_id}/about', 'ShowController@show');
 Route::get('/{show_id}', [ 'as'=> 'show', 'uses' => 'EpisodeController@index']);
 Route::get('/{show_id}/episode/{episode_id}', ['as' => 'episode', 'uses' => 'EpisodeController@show']);
+
+// Handle 404 Error
+
+App::missing(function($exception)
+{
+    return Response::view('errors.missing', array(), 404);
+});

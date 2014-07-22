@@ -1,6 +1,7 @@
 <?php
 
 use Brigham\Podcast\Repositories\EloquentPodcastRepository;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class EpisodeController extends \BaseController {
 
@@ -18,8 +19,15 @@ class EpisodeController extends \BaseController {
 	 */
 	public function index($show_id)
 	{
-        // For now just show a show and it's episodes...
-        $show = $this->repo->getShow($show_id);
+        try {
+
+            $show = $this->repo->getShow($show_id);
+
+        } catch(ModelNotFoundException $e) {
+
+            App::abort(404);
+
+        }
 
 		return View::make('episode.index', compact('show'));
 	}
@@ -32,7 +40,15 @@ class EpisodeController extends \BaseController {
 	 */
 	public function show($show_id, $episode_id)
 	{
-        $episode = $this->repo->getEpisode($episode_id);
+        try {
+            $episode = $this->repo->getEpisode($episode_id);
+
+            if($show_id != $episode->show_id) {
+                App::abort(404);
+            }
+        } catch(ModelNotFoundException $e) {
+            App::abort(404);
+        }
 
         return View::make('episode.show', compact('episode'));
 	}
