@@ -24,11 +24,17 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+$env = $app->detectEnvironment(function() {
+    $env =  getenv('ENV') ? : 'development';
 
-	'local' => array('your-machine-name'),
-
-));
+    if($env == 'development') {
+        $_ENV['DB_HOST'] = '';
+        $_ENV['DB_NAME'] = '';
+        $_ENV['DB_USERNAME'] = '';
+        $_ENV['DB_PASSWORD'] = '';
+    }
+    return $env;
+});
 
 /*
 |--------------------------------------------------------------------------
