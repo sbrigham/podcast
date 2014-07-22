@@ -2,6 +2,8 @@
 
 use Brigham\Podcast\Builders\Providers\SimplePie\PodcastBuilder;
 use Brigham\Podcast\Repositories\PodcastRepositoryInterface;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\Mail;
 
 class PodcastService implements PodcastServiceInterface {
     private $pod_repo;
@@ -50,9 +52,47 @@ class PodcastService implements PodcastServiceInterface {
         // Update the stored last_build_date
     }
 
-    public function updatePodcast($show_id) {
-        $old_show = $this->pod_repo->getShow($show_id);
+    public function getEpisode($show_id, $episode_id)
+    {
+        try {
+            $episode = $this->pod_repo->getEpisode($episode_id);
 
-        $pod_builder = new PodcastBuilder($old_show['feed_url']);
+            if($show_id != $episode->show_id) {
+                App::abort(404);
+            }
+        } catch(ModelNotFoundException $e) {
+            App::abort(404);
+        }
+
+        // Make sure source is valid
+
+        try {
+
+            fopen($episode['src'], 'r');
+
+        } catch(\Exception $e) {
+
+            Mail::send('emails.errors.d', ['message' => $e->getMessage()], function($message) {
+                $message->from('me@spencerbrigham.com', 'Podcast Admin');
+                $message->to('sdbrigha@buffalo.edu');
+            });
+        }
+
+        return $episode;
+    }
+
+    public function getShow($show_id)
+    {
+        try {
+
+             $show = $this->pod_repo->getShow($show_id);
+
+        } catch(ModelNotFoundException $e) {
+
+            App::abort(404);
+
+        }
+
+        return $show;
     }
 }

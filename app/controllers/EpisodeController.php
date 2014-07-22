@@ -1,15 +1,15 @@
 <?php
 
-use Brigham\Podcast\Repositories\EloquentPodcastRepository;
+use Brigham\Podcast\Services\PodcastServiceInterface;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class EpisodeController extends \BaseController {
 
-    private $repo;
+    private $pod_service;
 
-    public function __construct(EloquentPodcastRepository $repo)
+    public function __construct(PodcastServiceInterface $pod_service)
     {
-        $this->repo = $repo;
+        $this->pod_service = $pod_service;
     }
 
 	/**
@@ -19,15 +19,7 @@ class EpisodeController extends \BaseController {
 	 */
 	public function index($show_id)
 	{
-        try {
-
-            $show = $this->repo->getShow($show_id);
-
-        } catch(ModelNotFoundException $e) {
-
-            App::abort(404);
-
-        }
+        $show = $this->pod_service->getShow($show_id);
 
 		return View::make('episode.index', compact('show'));
 	}
@@ -40,15 +32,7 @@ class EpisodeController extends \BaseController {
 	 */
 	public function show($show_id, $episode_id)
 	{
-        try {
-            $episode = $this->repo->getEpisode($episode_id);
-
-            if($show_id != $episode->show_id) {
-                App::abort(404);
-            }
-        } catch(ModelNotFoundException $e) {
-            App::abort(404);
-        }
+        $episode = $this->pod_service->getEpisode($show_id, $episode_id);
 
         return View::make('episode.show', compact('episode'));
 	}
