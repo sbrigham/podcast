@@ -33,6 +33,10 @@ Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create',
 
 
 Route::get('/', 'ShowController@index');
+Route::get('/env', function(){
+    exit('poo');
+});
+
 Route::get('show', 'ShowController@index');
 Route::get('shows',['as' =>'shows', 'uses' => 'ShowController@index']);
 

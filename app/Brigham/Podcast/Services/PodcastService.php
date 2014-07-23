@@ -72,7 +72,7 @@ class PodcastService implements PodcastServiceInterface {
 
         } catch(\Exception $e) {
 
-            Mail::send('emails.errors.d', ['message' => $e->getMessage()], function($message) {
+            Mail::send('emails.errors.audio_not_found', ['message' => $e->getMessage()], function($message) {
                 $message->from('me@spencerbrigham.com', 'Podcast Admin');
                 $message->to('sdbrigha@buffalo.edu');
             });
