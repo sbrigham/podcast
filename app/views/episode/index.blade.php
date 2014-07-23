@@ -2,78 +2,92 @@
 
 
 @section('content')
-<div id="show_data">
-<h3> {{ $show['name'] }} </h3>
-    <div class="row">
-        <div class="col-md-6">
-            <img src="{{ $show['image_src']}}" class="img-responsive"/>
-        </div>
-        <div class="col-md-6">
-            {{ $show['description'] }}
+
+<div class="content well">
+    <div id="show-data">
+        <div class="row">
+            <div id="show-description" class="col-md-9">
+                <div>
+                    <h1 id="show-name-header"> {{ $show['name'] }} </h1>
+                </div>
+                <p>
+                    {{ $show['description'] }}
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="{{ $show['image_src']}}" class="img-responsive"/>
+            </div>
         </div>
     </div>
+
+    <hr>
+    <div id="episodes">
+        @foreach (array_chunk($show->episodes_paginated->getCollection()->all(), 3) as $row)
+        <div class="row">
+            @foreach($row as $item)
+            <article class="col col-md-4">
+                <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
+                    <div class="episode-guts well">
+                        <div class="episode-date container-fluid">
+                            {{ date('F d, Y', strtotime($item['published_at'])) }}
+                        </div>
+                        <div class="container-fluid">
+                            <h5 class="episode-name">
+                                {{ $item['name'] }}
+                            </h5>
+                        </div>
+
+                        <div class="episode-description container">
+                            {{ strip_tags($item['description']) }}
+                        </div>
+                    </div>
+                </a>
+            </article>
+            @endforeach
+        </div>
+        @endforeach
+    </div>
+
+    <div id ="pager" class="container">
+        {{ $show->episodes_paginated->links() }}
+    </div>
 </div>
-<br>
-<br>
 
-@if(isset($_GET['page']))
-  {{ $show->episodes_paginated->links() }}
-@endif
-
-<div id="episodes">
-    @foreach (array_chunk($show->episodes_paginated->getCollection()->all(), 3) as $row)
-      <div class="row">
-          @foreach($row as $item)
-          <article class="col col-md-4">
-              <hr>
-
-              <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
-              <div class="show-guts well">
-                  <div class="container-fluid">
-
-                          <h5 class="show-name">
-                              {{ $item['name'] }}
-                          </h5>
-
-                  </div>
-
-                  <div class="show-date container-fluid">
-                      {{ date('F d, Y', strtotime($item['published_at'])) }}
-                  </div>
-
-                  <div class="show-description container">
-                      {{ strip_tags($item['description']) }}
-                  </div>
-              </div>
-              </a>
-          </article>
-          @endforeach
-      </div>
-    @endforeach
-</div>
-{{ $show->episodes_paginated->links() }}
 
 <style>
+    #show-description {
+        color: #FFF;
+    }
+    #episodes{
+        padding-top:15px;
+    }
 
+    #pager {
+        text-align: center;
+    }
+    .episode-guts {
+        background: #292B2F;
+    }
     a:hover{
         text-decoration: none;
     }
 
-    .show-name {
-        font-size:18px;
+    .episode-name {
+        font-size:22px;
         font-family: arial, serif;
     }
 
-    .show-name:hover {
+    .episode-name:hover {
         text-decoration: underline;
     }
 
-    .show-date {
+    .episode-date {
         color: #32CD32;
-        padding-bottom: 5px;
+        text-align: right;
+        font-size: 10px;
     }
 
-    .show-description {
+    .episode-description {
         font-size: 12px;
     }
 
