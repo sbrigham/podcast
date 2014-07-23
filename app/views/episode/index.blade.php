@@ -21,24 +21,23 @@
           @foreach($row as $item)
           <article class="col col-md-4">
               <hr>
-              <div>
-                  <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
-                      <div class="show-name col-md-7">
-                          {{ $item['name'] }}
-                      </div>
-                      <div class="col-md-5 show-date" style = 'float:left'>
-                          {{ date('F d, Y', strtotime($item['published_at'])) }}
-                      </div>
-                  </a>
-              </div>
 
-              <div class="audio">
-                  <audio controls>
-                      <source src="{{$item['src'] }}" type="audio/mpeg">
-                  </audio>
-              </div>
-              <div class="show-description row">
-                  {{{ strip_tags($item['description']) }}}
+              <div class="show-guts well">
+                  <div class="container-fluid">
+                      <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
+                          <h5 class="show-name">
+                              {{ $item['name'] }}
+                          </h5>
+                      </a>
+                  </div>
+
+                  <div class="show-date container-fluid">
+                      {{ date('F d, Y', strtotime($item['published_at'])) }}
+                  </div>
+
+                  <div class="show-description container">
+                      {{ strip_tags($item['description']) }}
+                  </div>
               </div>
           </article>
           @endforeach
@@ -51,7 +50,8 @@
 <style>
     .show-name {
         font-size:18px;
-        padding-bottom: 5px;
+        font-family: arial, serif;
+        padding-bottom: 2px;
     }
 
     .show-name:hover {
@@ -59,16 +59,12 @@
     }
 
     .show-date {
-        text-align: right;
-        color: #FFF;
+        color: #32CD32;
+        padding-bottom: 5px;
     }
 
     .show-description {
-        color: #FFF;
-    }
-
-    .audio {
-        padding-bottom: 10px;
+        font-size: 12px;
     }
 
     audio {

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Episode.php" afterPath="$PROJECT_DIR$/app/models/Episode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/index.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +28,8 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="20" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.5769231" vertical-offset="60" max-vertical-offset="1320">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#a#0;n#div#0;n#article#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="24" column="40" selection-start="622" selection-end="622" vertical-scroll-proportion="0.24175824" vertical-offset="140" max-vertical-offset="1260">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -729,10 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="20" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.5769231" vertical-offset="60" max-vertical-offset="1320">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#a#0;n#div#0;n#article#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="24" column="40" selection-start="622" selection-end="622" vertical-scroll-proportion="0.24175824" vertical-offset="140" max-vertical-offset="1260">
+          <folding />
         </state>
       </provider>
     </entry>
