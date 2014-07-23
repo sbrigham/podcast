@@ -11,8 +11,6 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application;
-
 /*
 |--------------------------------------------------------------------------
 | Detect The Application Environment
@@ -24,21 +22,9 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(function() {
-
-    $env =  'development';
-    if (App::runningInConsole() || getenv('ENV')) {
-        $env = 'production';
-    }
-
-    if($env == 'development') {
-        $_ENV['DB_HOST'] = '';
-        $_ENV['DB_NAME'] = '';
-        $_ENV['DB_USERNAME'] = '';
-        $_ENV['DB_PASSWORD'] = '';
-    }
-    return $env;
-});
+$env = $app->detectEnvironment(array(
+    'local' => array('homestead')
+));
 
 /*
 |--------------------------------------------------------------------------

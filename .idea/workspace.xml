@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/start.php" afterPath="$PROJECT_DIR$/bootstrap/start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,7 +111,7 @@
       <file leaf-file-name="start.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.3889515" vertical-offset="0" max-vertical-offset="1200">
+            <state line="13" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.06764374" vertical-offset="0" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -744,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.3889515" vertical-offset="0" max-vertical-offset="1200">
+        <state line="13" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.06764374" vertical-offset="0" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
