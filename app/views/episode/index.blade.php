@@ -31,12 +31,13 @@
                       </div>
                   </a>
               </div>
+
               <div class="audio">
                   <audio controls>
                       <source src="{{$item['src'] }}" type="audio/mpeg">
                   </audio>
               </div>
-              <div class="show-description">
+              <div class="show-description row">
                   {{{ strip_tags($item['description']) }}}
               </div>
           </article>

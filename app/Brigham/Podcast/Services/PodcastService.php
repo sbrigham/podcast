@@ -50,7 +50,7 @@ class PodcastService implements PodcastServiceInterface {
             }
         }
 
-        // Update the stored last_build_date
+        // TODO Update the stored last_build_date
     }
 
     public function getEpisode($show_id, $episode_id)
@@ -63,21 +63,6 @@ class PodcastService implements PodcastServiceInterface {
             }
         } catch(ModelNotFoundException $e) {
             App::abort(404);
-        }
-
-        // Make sure source is valid
-
-        try {
-
-            fopen($episode['src'], 'r');
-
-        } catch(\Exception $e) {
-            $message = $e->getMessage();
-
-            Mail::send('emails.errors.audio_not_found', ['message' => $message], function($message) {
-                $message->from('me@spencerbrigham.com', 'Podcast Admin');
-                $message->to('sdbrigha@buffalo.edu');
-            });
         }
 
         return $episode;

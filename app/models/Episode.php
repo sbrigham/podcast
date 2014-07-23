@@ -14,4 +14,18 @@ class Episode extends \Eloquent {
     {
         return $this->belongsTo('Show');
     }
+
+    public function sourceIsActive() {
+        try {
+
+            fopen($this->src, 'r');
+
+        } catch(\Exception $e) {
+
+            return false;
+
+        }
+
+        return true;
+    }
 }

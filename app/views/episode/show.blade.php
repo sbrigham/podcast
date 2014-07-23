@@ -10,6 +10,16 @@
         <img src ="{{ $episode['image_src'] }}" class="img-responsive"/>
     </div>
     <div id="episode-desc"> {{ strip_tags($episode['description']) }} </div>
+
+    <div>
+        @if(! $episode->sourceIsActive())
+            This source is not currently active
+
+        <script>
+          $('audio').attr('disabled', 'disabled');
+        </script>
+        @endif
+    </div>
     <div>
         <audio controls width="100%">
             <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
