@@ -4,9 +4,7 @@
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php" afterPath="$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/start.php" afterPath="$PROJECT_DIR$/bootstrap/start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PodcastService.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PodcastService.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="15" selection-start="2181" selection-end="2181" vertical-scroll-proportion="-22.625" vertical-offset="567" max-vertical-offset="1500">
+            <state line="76" column="25" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.56373626" vertical-offset="567" max-vertical-offset="1515">
               <folding />
             </state>
           </provider>
@@ -56,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="30" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.24725275" vertical-offset="645" max-vertical-offset="1950">
+            <state line="58" column="47" selection-start="1824" selection-end="1824" vertical-scroll-proportion="-9.375" vertical-offset="645" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -68,7 +66,7 @@
       <file leaf-file-name="audio_not_found.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
@@ -178,11 +176,11 @@
         <option value="$PROJECT_DIR$/app/controllers/EpisodeController.php" />
         <option value="$PROJECT_DIR$/app/config/local/database.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
-        <option value="$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php" />
         <option value="$PROJECT_DIR$/bootstrap/start.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
+        <option value="$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php" />
       </list>
     </option>
   </component>
@@ -738,20 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="15" selection-start="2181" selection-end="2181" vertical-scroll-proportion="-22.625" vertical-offset="567" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="22" selection-start="467" selection-end="467" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="2985">
@@ -803,7 +787,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="30" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.24725275" vertical-offset="645" max-vertical-offset="1950">
+        <state line="58" column="47" selection-start="1824" selection-end="1824" vertical-scroll-proportion="-9.375" vertical-offset="645" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/emails/errors/audio_not_found.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="25" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.56373626" vertical-offset="567" max-vertical-offset="1515">
           <folding />
         </state>
       </provider>

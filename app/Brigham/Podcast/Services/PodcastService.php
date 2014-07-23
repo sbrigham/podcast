@@ -3,6 +3,7 @@
 use Brigham\Podcast\Builders\Providers\SimplePie\PodcastBuilder;
 use Brigham\Podcast\Repositories\PodcastRepositoryInterface;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 
 class PodcastService implements PodcastServiceInterface {
@@ -71,8 +72,9 @@ class PodcastService implements PodcastServiceInterface {
             fopen($episode['src'], 'r');
 
         } catch(\Exception $e) {
+            $message = $e->getMessage();
 
-            Mail::send('emails.errors.audio_not_found', ['message' => $e->getMessage()], function($message) {
+            Mail::send('emails.errors.audio_not_found', ['message' => $message], function($message) {
                 $message->from('me@spencerbrigham.com', 'Podcast Admin');
                 $message->to('sdbrigha@buffalo.edu');
             });
