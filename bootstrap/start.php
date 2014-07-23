@@ -25,7 +25,11 @@ $app = new Illuminate\Foundation\Application;
 */
 
 $env = $app->detectEnvironment(function() {
-    $env =  getenv('ENV') ? : 'development';
+
+    $env =  'development';
+    if (App::runningInConsole() || getenv('ENV')) {
+        $env = 'production';
+    }
 
     if($env == 'development') {
         $_ENV['DB_HOST'] = '';
