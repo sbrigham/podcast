@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/index.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="40" selection-start="622" selection-end="622" vertical-scroll-proportion="0.24175824" vertical-offset="140" max-vertical-offset="1260">
+            <state line="19" column="2" selection-start="383" selection-end="383" vertical-scroll-proportion="0.093406595" vertical-offset="200" max-vertical-offset="1410">
               <folding />
             </state>
           </provider>
@@ -723,7 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="40" selection-start="622" selection-end="622" vertical-scroll-proportion="0.24175824" vertical-offset="140" max-vertical-offset="1260">
+        <state line="19" column="2" selection-start="383" selection-end="383" vertical-scroll-proportion="0.093406595" vertical-offset="200" max-vertical-offset="1410">
           <folding />
         </state>
       </provider>

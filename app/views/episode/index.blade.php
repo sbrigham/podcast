@@ -15,6 +15,11 @@
 </div>
 <br>
 <br>
+
+@if(isset($_GET['page']))
+  {{ $show->episodes_paginated->links() }}
+@endif
+
 <div id="episodes">
     @foreach (array_chunk($show->episodes_paginated->getCollection()->all(), 3) as $row)
       <div class="row">
@@ -22,13 +27,14 @@
           <article class="col col-md-4">
               <hr>
 
+              <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
               <div class="show-guts well">
                   <div class="container-fluid">
-                      <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
+
                           <h5 class="show-name">
                               {{ $item['name'] }}
                           </h5>
-                      </a>
+
                   </div>
 
                   <div class="show-date container-fluid">
@@ -39,19 +45,23 @@
                       {{ strip_tags($item['description']) }}
                   </div>
               </div>
+              </a>
           </article>
           @endforeach
       </div>
     @endforeach
-
-    {{ $show->episodes_paginated->links() }}
 </div>
+{{ $show->episodes_paginated->links() }}
 
 <style>
+
+    a:hover{
+        text-decoration: none;
+    }
+
     .show-name {
         font-size:18px;
         font-family: arial, serif;
-        padding-bottom: 2px;
     }
 
     .show-name:hover {
