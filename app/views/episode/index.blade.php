@@ -21,7 +21,6 @@
         </div>
     </div>
 
-    <hr>
     <div id="episodes">
         @foreach (array_chunk($show->episodes_paginated->getCollection()->all(), 3) as $row)
         <div class="row">

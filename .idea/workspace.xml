@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EpisodeController.php" afterPath="$PROJECT_DIR$/app/controllers/EpisodeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/index.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/show/index.blade.php" afterPath="$PROJECT_DIR$/app/views/show/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/view.php" afterPath="$PROJECT_DIR$/app/config/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
@@ -34,7 +29,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="57" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.47511312" vertical-offset="675" max-vertical-offset="1665">
+            <state line="12" column="21" selection-start="336" selection-end="336" vertical-scroll-proportion="0.18665159" vertical-offset="15" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -755,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="57" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.47511312" vertical-offset="675" max-vertical-offset="1665">
+        <state line="12" column="21" selection-start="336" selection-end="336" vertical-scroll-proportion="0.18665159" vertical-offset="15" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
