@@ -6,16 +6,17 @@
 <div class="content well">
     <div id="show-data">
         <div class="row">
+            <div class="col-md-3">
+                <img src="{{ $show['image_src']}}" class="img-responsive"/>
+            </div>
             <div id="show-description" class="col-md-9">
                 <div>
                     <h1 id="show-name-header"> {{ $show['name'] }} </h1>
                 </div>
+                <hr>
                 <p>
                     {{ $show['description'] }}
                 </p>
-            </div>
-            <div class="col-md-3">
-                <img src="{{ $show['image_src']}}" class="img-responsive"/>
             </div>
         </div>
     </div>
@@ -29,16 +30,18 @@
                 <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
                     <div class="episode-guts well">
                         <div class="episode-date container-fluid">
-                            {{ date('F d, Y', strtotime($item['published_at'])) }}
+                            {{ date('F dS, Y', strtotime($item['published_at'])) }}
                         </div>
                         <div class="container-fluid">
                             <h5 class="episode-name">
                                 {{ $item['name'] }}
                             </h5>
                         </div>
+                        <hr>
+                        <div class="container-fluid">
+                            <audio src="{{ $item['src'] }}" controls width="100%">
 
-                        <div class="episode-description container">
-                            {{ strip_tags($item['description']) }}
+                            </audio>
                         </div>
                     </div>
                 </a>
@@ -66,7 +69,9 @@
         text-align: center;
     }
     .episode-guts {
+        border:2px solid #FFF;
         background: #292B2F;
+        text-shadow: rgba(0, 0, 0, 0.298039) 1px 1px 1px;
     }
     a:hover{
         text-decoration: none;
@@ -83,8 +88,10 @@
 
     .episode-date {
         color: #32CD32;
-        text-align: right;
         font-size: 10px;
+        text-align: right;
+        margin-top: -5px;
+        margin-right: -5px;
     }
 
     .episode-description {
@@ -93,10 +100,6 @@
 
     audio {
         width: 100%;
-    }
-
-    article {
-        padding-bottom: 10px;
     }
 </style>
 

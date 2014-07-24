@@ -34,6 +34,7 @@ class EpisodeController extends \BaseController {
 	{
         $episode = $this->pod_service->getEpisode($show_id, $episode_id);
 
-        return View::make('episode.show', compact('episode'));
+        $show = $episode->show()->getResults();
+        return View::make('episode.show', compact('episode', 'show'));
 	}
 }
