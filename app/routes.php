@@ -14,6 +14,12 @@
 App::bind('Brigham\Podcast\Repositories\PodcastRepositoryInterface', 'Brigham\Podcast\Repositories\EloquentPodcastRepository');
 App::bind('Brigham\Podcast\Services\PodcastServiceInterface', 'Brigham\Podcast\Services\PodcastService');
 
+Route::get('/mail', function(){
+   Mail::send('emails.errors.test', ['message' => 'Whatever'], function($message){
+       $message->to('sdbrigha@buffalo.edu', 'Spencer')->subject('Welcome!');
+   });
+});
+
 // Admin Routes
 Route::group(['prefix' => 'admin', 'before' => 'auth'], function() {
     Route::get('/', 'AdminDashboardController@index');
