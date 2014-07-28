@@ -11,8 +11,21 @@ gulp.task('phpunit', function(){
     });
 });
 
+gulp.task('cept_phpunit', function(){
+
+    exec("vendor/bin/codecept run functional", function(error, stdout) {
+        sys.puts(stdout);
+    });
+});
+
 gulp.task('watch', function() {
     gulp.watch('app/tests/*.php', ['phpunit']);
 });
 
+gulp.task('watch_cept', function() {
+    gulp.watch('tests/functional/*.php', ['cept_phpunit']);
+});
+
 gulp.task('default', ['watch']);
+
+gulp.task('cept', ['watch_cept']);

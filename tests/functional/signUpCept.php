@@ -1,4 +1,4 @@
-<?php 
+<?php
 $I = new FunctionalTester($scenario);
 
 $I->am('a guest');
@@ -9,11 +9,22 @@ $I->click('Sign Up');
 $I->seeCurrentUrlEquals('/register');
 
 $I->fillField('Username:', 'test');
-$I->fillField('Email:', 'sdbrigha@buffalo.edu');
+$I->fillField('Email:', 'test@test.com');
 $I->fillField('Password:', 'pass');
-$I->fillField('Password Confirmation:', 'pass');
-$I->click('Sign Up');
+$I->fillField('Confirm Password:', 'pass');
+$I->click('Sign Up!');
 
-$I->seeCurrentUrlEquals('/');
+$I->seeCurrentUrlEquals('');
 $I->see('Welcome to Podcast');
+
+$I->seeRecord('users', [
+    'username' => 'test',
+    'email' => 'test@test.com'
+]);
+
+$I->assertTrue(Auth::check());
+
+
+
+
 

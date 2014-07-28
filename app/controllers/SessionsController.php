@@ -3,17 +3,6 @@
 class SessionsController extends \BaseController {
 
 	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		//
-	}
-
-
-	/**
 	 * Show the form for creating a new resource.
 	 *
 	 * @return Response
@@ -38,12 +27,11 @@ class SessionsController extends \BaseController {
         $attempt = Auth::attempt([
             'email' => $input['email'],
             'password' => $input['password']
-        ]);
+        ], true);
 
         if ($attempt) return Redirect::intended('/');
 
         dd('invalid login credentials');
-
 	}
 
 

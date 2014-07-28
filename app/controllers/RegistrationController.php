@@ -1,18 +1,19 @@
 <?php
 
 use Brigham\Services;
-use Brigham\Services\UserService;
-use Brigham\Services\Validation\ValidationException;
+use Brigham\User\Forms\RegistrationForm;
+use Brigham\User\Services\UserService;
 
-class AdminUsersController extends \BaseController {
+class RegistrationController extends \BaseController {
     protected $userService;
-
+    protected $regForm;
     /**
-     * @var Brigham\Services\UserService;
+     * @var Brigham\User\Services\UserService;
      */
 
-    public function __construct(UserService $userService)
+    public function __construct(RegistrationForm $regForm, UserService $userService)
     {
+        $this->regForm = $regForm;
         $this->userService = $userService;
     }
 
@@ -33,7 +34,7 @@ class AdminUsersController extends \BaseController {
      */
     public function create()
     {
-        return View::make('admin.users.create');
+        return View::make('user.registration.create');
     }
 
 
@@ -44,14 +45,12 @@ class AdminUsersController extends \BaseController {
      */
     public function store()
     {
-        try{
-            $user = $this->userService->make(Input::all());
-        } catch(ValidationException $e){
-            return Redirect::back()->withInput()->withErrors($e->getErrors());
-        }
+        $this->regForm->validate(Input::all());
+        $user = $this->userService->make(Input::all());
+        Auth::login($user);
 
         // TODO redirect with messages -> user has been created? in modal?
-        return Redirect::route('admin.users.index');
+        return Redirect::route('home');
     }
 
     /**

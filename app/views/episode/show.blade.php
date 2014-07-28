@@ -1,42 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container well">
-    <article>
-        <div class="col-md-3 fluid-container">
-            <div id="episode-img" class="fluid-container">
-                @if($episode['image_src'] != null)
-                <img src ="{{ $episode['image_src'] }}" class="img-responsive"/>
-                @else
-                <img src ="{{ $show['image_src'] }}" class="img-responsive"/>
-                @endif
-            </div>
-        </div>
-        <div class="col-md-9">
-            <h1> {{ $episode['name'] }}</h1>
-            <hr>
-            <div class="episode-date container-fluid">
-                {{ date('F dS, Y', strtotime($episode['published_at'])) }}
-            </div>
-            <div id="episode-desc"> {{ strip_tags($episode['description']) }} </div>
-            <div>
-                @if(! $episode->sourceIsActive())
-                This source is not currently active
-
-                <script>
-                    $('audio').attr('disabled', 'disabled');
-                </script>
-                @endif
-            </div>
-            <div>
-                <audio controls width="100%">
-                    <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
-                </audio>
-            </div>
-        </div>
-    </article>
-</div>
-
 
 <style>
     .episode-date {
@@ -56,4 +20,46 @@
         padding-bottom: 10px;
     }
 </style>
+
+<div class="container well">
+    <article>
+        <div class="col-md-3 fluid-container">
+            <div id="episode-img" class="fluid-container">
+                @if($episode['image_src'] != null)
+                <img src ="{{ $episode['image_src'] }}" class="img-responsive"/>
+                @else
+                <img src ="{{ $show['image_src'] }}" class="img-responsive"/>
+                @endif
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h1> {{ $episode['name'] }}</h1>
+            <hr>
+            <div class="episode-date container-fluid">
+                {{ date('F jS, Y', strtotime($episode['published_at'])) }}
+            </div>
+            <div id="episode-desc"> {{ strip_tags($episode['description']) }} </div>
+            <div>
+                @if(! $episode->sourceIsActive())
+                This source is not currently active
+
+                <script>
+                    $('audio').attr('disabled', 'disabled');
+                </script>
+                @endif
+            </div>
+            <div>
+                <audio id="episode" controls width="100%">
+                    <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
+                </audio>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script src="/js/podcast/podcast.js"></script>
+<script>
+    new Podcast($('#episode'), '{{ $episode['src'] }}');
+</script>
+
 @stop

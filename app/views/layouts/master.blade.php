@@ -5,8 +5,8 @@
         Listen to Podcasts
     </title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src = '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <script src = '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
     {{ HTML::style('css/layouts/slate/slate.css'); }}
     {{ HTML::style('css/layouts/slate/bootswatch.less'); }}
     {{ HTML::style('css/layouts/slate/variables.less'); }}
@@ -24,7 +24,10 @@
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-              <li class="active"> {{ HTML::linkRoute('shows', 'Shows') }} </li>
+              <li> {{ HTML::linkRoute('shows', 'Shows') }} </li>
+          </ul>
+          <ul class="nav navbar-nav">
+              <li> {{ HTML::link('/register', 'Sign Up') }} </li>
           </ul>
       </div>
   </div>

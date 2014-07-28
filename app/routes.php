@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'before' => 'auth'], function() {
     Route::resource('rss', 'RssFeedController',
         array('except' => array('show')));
 
-    Route::resource('user', 'AdminUsersController',
+    Route::resource('user', 'UsersController',
         array('except' => array('show')));
 
     Route::resource('category', 'CategoryController');
@@ -37,8 +37,11 @@ Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
 Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create', 'destroy' , 'store']]);
 
+Route::resource('register', 'RegistrationController');
+Route::get('register', 'RegistrationController@create');
+//Route::get('register.store', 'RegistrationController@store');
 
-Route::get('/', 'ShowController@index');
+Route::get('/', ['as'=>'home', 'uses' => 'ShowController@index']);
 Route::get('/env', function(){
     exit('poo');
 });

@@ -29,7 +29,7 @@
                 <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
                     <div class="episode-guts well">
                         <div class="episode-date container-fluid">
-                            {{ date('F dS, Y', strtotime($item['published_at'])) }}
+                            {{ date('F jS, Y', strtotime($item['published_at'])) }}
                         </div>
                         <div class="container-fluid">
                             <h5 class="episode-name">
