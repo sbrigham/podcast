@@ -19,7 +19,6 @@ class NewPodcastsSeeder extends Seeder {
             'http://opieandanthonypodcast.libsyn.com/rss',
             'http://feeds.soundcloud.com/users/soundcloud:users:38128127/sounds.rss',
             'http://www.podcastone.com/podcast?categoryID2=331',
-            'http://traffic.tfvpodcast.libsyn.com/rss',
             'http://deathsquad.libsyn.com/rss'
         ];
 
