@@ -9,6 +9,10 @@ class SessionsController extends \BaseController {
 	 */
 	public function create()
 	{
+        if(Auth::check()) {
+            return Redirect::home();
+        }
+
 		return View::make('sessions.create');
 	}
 
@@ -29,9 +33,11 @@ class SessionsController extends \BaseController {
             'password' => $input['password']
         ], true);
 
+        Flash::message('Welcome '. Auth::user()['username'].'!');
+
         if ($attempt) return Redirect::intended('/');
 
-        dd('invalid login credentials');
+        return Redirect::to('/login');
 	}
 
 

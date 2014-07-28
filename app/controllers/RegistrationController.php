@@ -49,7 +49,8 @@ class RegistrationController extends \BaseController {
         $user = $this->userService->make(Input::all());
         Auth::login($user);
 
-        // TODO redirect with messages -> user has been created? in modal?
+        Flash::success('Thank you for creating an account!');
+
         return Redirect::route('home');
     }
 

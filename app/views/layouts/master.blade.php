@@ -26,15 +26,21 @@
           <ul class="nav navbar-nav">
               <li> {{ HTML::linkRoute('shows', 'Shows') }} </li>
           </ul>
+          @if(! Auth::check())
+          <ul class="nav navbar-nav">
+              <li> {{ HTML::link('/login', 'Login') }} </li>
+          </ul>
           <ul class="nav navbar-nav">
               <li> {{ HTML::link('/register', 'Sign Up') }} </li>
           </ul>
+          @endif
       </div>
   </div>
 
 
     <div class="jumbotron">
         <div style="padding-top:10px">
+            @include('flash::message')
             @yield('content')
         </div>
     </div>
