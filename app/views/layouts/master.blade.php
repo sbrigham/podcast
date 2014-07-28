@@ -33,6 +33,10 @@
           <ul class="nav navbar-nav">
               <li> {{ HTML::link('/register', 'Sign Up') }} </li>
           </ul>
+          @else
+          <ul class="nav navbar-nav">
+              <li> {{ HTML::link('/logout', 'Logout') }} </li>
+          </ul>
           @endif
       </div>
   </div>
