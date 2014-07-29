@@ -46,6 +46,8 @@ class RegistrationController extends \BaseController {
     public function store()
     {
         $this->regForm->validate(Input::all());
+
+
         $user = $this->userService->make(Input::all());
         Auth::login($user);
 

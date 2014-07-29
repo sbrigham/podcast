@@ -20,7 +20,7 @@
                 {{ Form::password('password',['class' => 'form-control']) }}
                 {{ $errors->first('password', '<span class=control-label>:message</span>') }}
             </div>
-            <div class="form-group @if ($errors->has('last_name')) has-error @endif">
+            <div class="form-group @if ($errors->has('confirm_password')) has-error @endif">
                 {{ Form::label('password', 'Confirm Password:', ['class' => 'control-label']) }}
                 {{ Form::password('password_confirmation',['class' => 'form-control']) }}
                 {{ $errors->first('password_confirmation', '<span class=control-label>:message</span>') }}
