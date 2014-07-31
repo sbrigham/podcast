@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateEpisodeSessionsTable extends Migration {
+class CreateEpisodeRatingTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,12 @@ class CreateEpisodeSessionsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('episode_sessions', function(Blueprint $table)
+		Schema::create('episode_ratings', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('user_id')->references('id')->on('users');
 			$table->integer('episode_id')->references('id')->on('episodes');
-            $table->integer('user_id')->references('id')->on('users');
-			$table->integer('seconds_in');
+			$table->integer('rating');
 			$table->timestamps();
 		});
 	}
@@ -30,7 +30,7 @@ class CreateEpisodeSessionsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('episode_sessions');
+		Schema::drop('episode_ratings');
 	}
 
 }

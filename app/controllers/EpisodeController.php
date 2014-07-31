@@ -1,15 +1,19 @@
 <?php
 
+use Brigham\Podcast\Repositories\ShowRepository;
+use Brigham\Podcast\Services\EpisodeService;
 use Brigham\Podcast\Services\PodcastServiceInterface;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class EpisodeController extends \BaseController {
 
-    private $pod_service;
+    private $episode_service;
+    private $show_repo;
 
-    public function __construct(PodcastServiceInterface $pod_service)
+    public function __construct(EpisodeService $episode_service, ShowRepository $show_repo)
     {
-        $this->pod_service = $pod_service;
+        $this->episode_service = $episode_service;
+        $this->show_repo = $show_repo;
     }
 
 	/**
@@ -19,7 +23,7 @@ class EpisodeController extends \BaseController {
 	 */
 	public function index($show_id)
 	{
-        $show = $this->pod_service->getShow($show_id);
+        $show = $this->show_repo->getShow($show_id);
 
 		return View::make('episode.index', compact('show'));
 	}
@@ -32,7 +36,14 @@ class EpisodeController extends \BaseController {
 	 */
 	public function show($show_id, $episode_id)
 	{
-        $episode = $this->pod_service->getEpisode($show_id, $episode_id);
+        $episode = $this->episode_service->getEpisode($show_id, $episode_id);
+        $episode['average_rating'] = $this->episode_service->getEpisodeAverageRating($episode_id);
+
+        if (Auth::check()) {
+            $episode['user_rating'] = $this->episode_service->getEpisodeRating($episode_id, Auth::user()->id);
+        }
+
+        dd($episode);
 
         //dd(URL::route('episode.session.index', ['episode' => $episode['id']]));
         $show = $episode->show()->getResults();

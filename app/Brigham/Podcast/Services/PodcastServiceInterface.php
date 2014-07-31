@@ -12,4 +12,4 @@ namespace Brigham\Podcast\Services;
 interface PodcastServiceInterface {
     public function make($feed_url);
     public function updatePodcasts();
-} 
+}
