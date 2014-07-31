@@ -57,9 +57,17 @@
     </article>
 </div>
 
-<script src="/js/podcast/podcast.js"></script>
+@if( Auth::check())
+<script src="/js/podcast/audio_session.js"></script>
 <script>
-    new Podcast($('#episode'), '{{ $episode['src'] }}');
+    new AudioSession($('#episode'), {
+        checks_exist    : false,
+        episode_id      : "{{ $episode['id'] }}",
+        get_session_url : "{{ URL::route('session.index', ['episode' => $episode['id']]) }}",
+        audio_id: "{{ $episode['id']}}",
+        set_session_url : "{{ URL::route('session.store') }}",
+    });
 </script>
+@endif
 
 @stop

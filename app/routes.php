@@ -39,7 +39,8 @@ Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create',
 
 Route::resource('register', 'RegistrationController');
 Route::get('register', 'RegistrationController@create');
-//Route::get('register.store', 'RegistrationController@store');
+
+Route::resource('session', 'EpisodeSessionController', ['only' => ['index', 'store']]);
 
 Route::get('/', ['as'=>'home', 'uses' => 'ShowController@index']);
 Route::get('/env', function(){
