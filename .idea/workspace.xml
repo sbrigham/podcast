@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layouts/cosmo/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/star.rating.css" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/layouts/slate/bootswatch.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/layouts/slate/master.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/layouts/slate/slate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/layouts/slate/variables.less" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/podcast/audio.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EpisodeController.php" afterPath="$PROJECT_DIR$/app/controllers/EpisodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/index.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/show/index.blade.php" afterPath="$PROJECT_DIR$/app/views/show/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +59,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/show/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="40" selection-start="252" selection-end="252" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="600">
+            <state line="33" column="11" selection-start="975" selection-end="975" vertical-scroll-proportion="0.54347825" vertical-offset="270" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -806,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/show/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="252" selection-end="252" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="600">
+        <state line="33" column="11" selection-start="975" selection-end="975" vertical-scroll-proportion="0.54347825" vertical-offset="270" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
