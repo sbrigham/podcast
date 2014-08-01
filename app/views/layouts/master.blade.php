@@ -7,10 +7,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src = '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
-    {{ HTML::style('css/layouts/slate/slate.css'); }}
-    {{ HTML::style('css/layouts/slate/bootswatch.less'); }}
-    {{ HTML::style('css/layouts/slate/variables.less'); }}
-    {{ HTML::style('css/layouts/slate/master.css'); }}
   </head>
   <body>
   <div class="navbar navbar-default">
@@ -42,11 +38,9 @@
   </div>
 
 
-    <div class="jumbotron">
-        <div style="padding-top:10px">
-            @include('flash::message')
-            @yield('content')
-        </div>
+    <div class="jumbotron" style="padding-top:15px">
+        @include('flash::message')
+        @yield('content')
     </div>
   </body>
 </html>

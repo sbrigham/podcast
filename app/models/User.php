@@ -71,6 +71,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return 'remember_token';
 	}
 
+    /**
+     * Passwords must always be Hashed
+     *
+     * @param $password
+     */
+    public function setPasswordAttribute ($password) {
+        $this->attributes['password'] = Hash::make($password);
+    }
+
 	/**
 	 * Get the e-mail address where password reminders are sent.
 	 *

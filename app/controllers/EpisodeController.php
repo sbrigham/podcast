@@ -43,9 +43,6 @@ class EpisodeController extends \BaseController {
             $episode['user_rating'] = $this->episode_service->getEpisodeRating($episode_id, Auth::user()->id);
         }
 
-        dd($episode);
-
-        //dd(URL::route('episode.session.index', ['episode' => $episode['id']]));
         $show = $episode->show()->getResults();
         return View::make('episode.show', compact('episode', 'show'));
 	}

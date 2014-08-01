@@ -37,6 +37,8 @@ Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
 Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create', 'destroy' , 'store']]);
 
+Route::post('episode/rating', ['as' => 'episode.rating', 'uses' => 'EpisodeRatingController@store']);
+
 Route::resource('register', 'RegistrationController');
 Route::get('register', 'RegistrationController@create');
 

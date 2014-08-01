@@ -20,6 +20,7 @@
             </div>
         </div>
     </div>
+    <hr>
 
     <div id="episodes">
         @foreach (array_chunk($show->episodes_paginated->getCollection()->all(), 3) as $row)
@@ -57,9 +58,6 @@
 
 
 <style>
-    #show-description {
-        color: #FFF;
-    }
     #episodes{
         padding-top:15px;
     }
@@ -68,8 +66,6 @@
         text-align: center;
     }
     .episode-guts {
-        border:2px solid #FFF;
-        background: #292B2F;
         text-shadow: rgba(0, 0, 0, 0.298039) 1px 1px 1px;
     }
     a:hover{
@@ -78,7 +74,6 @@
 
     .episode-name {
         font-size:22px;
-        font-family: arial, serif;
     }
 
     .episode-name:hover {

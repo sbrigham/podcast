@@ -1,10 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-<div>
-    Welcome to Podcast
-</div>
-
 <div class="container" id="shows">
     @foreach(array_chunk($shows->getCollection()->all(), 3) as $show)
       <div class="row">
@@ -23,7 +19,6 @@
           </div>
           @endforeach
       </div>
-    <hr>
     @endforeach
 
     {{ $shows->links() }}
