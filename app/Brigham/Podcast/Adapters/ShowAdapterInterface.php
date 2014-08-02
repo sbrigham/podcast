@@ -7,4 +7,5 @@ interface ShowAdapterInterface {
     public function getDescription();
     public function getImageSrc();
     public function getLastBuildDate();
+    public function getEpisodes();
 }
