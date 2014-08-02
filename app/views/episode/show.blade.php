@@ -63,7 +63,7 @@
             <hr>
             <div id="episode-desc"> {{ strip_tags($episode['description']) }} </div>
             <div id="episode-src" class="container">
-                <audio id="episode" controls>
+                <audio id="episode" controls preload="auto">
                     <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
                 </audio>
             </div>

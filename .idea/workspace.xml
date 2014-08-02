@@ -4,8 +4,7 @@
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/blog.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/podcast/audio.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/User/Services/UserService.php" afterPath="$PROJECT_DIR$/app/Brigham/User/Services/UserService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,6 +27,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="20" selection-start="541" selection-end="541" vertical-scroll-proportion="-0.625" vertical-offset="255" max-vertical-offset="1575">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SessionsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,10 +56,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="630">
+            <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/episode/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="58" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.1904762" vertical-offset="855" max-vertical-offset="1830">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="21" selection-start="204" selection-end="212" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -61,24 +87,6 @@
         <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="48" column="36" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-20.0" vertical-offset="180" max-vertical-offset="1290">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationForm.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Brigham/User/Forms/RegistrationForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="1" selection-start="302" selection-end="302" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/user/registration/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="18" selection-start="595" selection-end="595" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -108,15 +116,6 @@
         <entry file="file://$PROJECT_DIR$/app/Brigham/User/Repositories/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PodcastServiceInterface.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastServiceInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="191" selection-end="191" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -181,11 +180,11 @@
         <option value="$PROJECT_DIR$/app/views/episode/index.blade.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/episode/show.blade.php" />
         <option value="$PROJECT_DIR$/app/views/show/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" />
         <option value="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
         <option value="$PROJECT_DIR$/app/Brigham/User/Services/UserService.php" />
+        <option value="$PROJECT_DIR$/app/views/episode/show.blade.php" />
       </list>
     </option>
   </component>
@@ -270,6 +269,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="episode" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,15 +430,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/EpisodeSessionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="71" selection-start="651" selection-end="651" vertical-scroll-proportion="-11.875" vertical-offset="75" max-vertical-offset="705">
-          <folding>
-            <element signature="e#7#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/EpisodeSession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="206" selection-end="366" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="405">
@@ -506,23 +536,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episode/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="5.0" vertical-offset="300" max-vertical-offset="1830">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="41" selection-start="1019" selection-end="1019" vertical-scroll-proportion="-8.125" vertical-offset="135" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="541" selection-end="541" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
@@ -736,6 +752,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="204" selection-end="212" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/registration/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="595" selection-end="595" vertical-scroll-proportion="0.26190478" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Forms/RegistrationForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="302" selection-end="302" vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="36" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-20.0" vertical-offset="180" max-vertical-offset="1290">
@@ -743,23 +787,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Forms/RegistrationForm.php">
+    <entry file="file://$PROJECT_DIR$/app/views/episode/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="302" selection-end="302" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
+        <state line="18" column="20" selection-start="541" selection-end="541" vertical-scroll-proportion="-0.625" vertical-offset="255" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/registration/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/episode/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="595" selection-end="595" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="630">
+        <state line="65" column="58" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.1904762" vertical-offset="855" max-vertical-offset="1830">
           <folding />
         </state>
       </provider>
