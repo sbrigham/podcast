@@ -4,7 +4,12 @@
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/blog.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/podcast/audio.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/ShowAdapter.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/ShowAdapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/ShowBuilder.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/ShowBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php" afterPath="$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,48 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
+      <file leaf-file-name="UpdatePodcastsCommand.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.375" vertical-offset="225" max-vertical-offset="945">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/RegistrationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="38" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-4.375" vertical-offset="645" max-vertical-offset="1470">
-              <folding>
-                <element signature="e#7#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/episode/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="58" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.1904762" vertical-offset="855" max-vertical-offset="1830">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="204" selection-end="212" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
+            <state line="43" column="30" selection-start="848" selection-end="848" vertical-scroll-proportion="-16.541666" vertical-offset="203" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -86,36 +53,66 @@
       <file leaf-file-name="PodcastService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="36" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-20.0" vertical-offset="180" max-vertical-offset="1290">
+            <state line="28" column="28" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.0" vertical-offset="120" max-vertical-offset="1290">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpisodeAdapterInterface.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/EpisodeAdapterInterface.php">
+      <file leaf-file-name="PodcastRepositoryInterface.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/PodcastRepositoryInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="4" column="20" selection-start="107" selection-end="107" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpisodeService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/EpisodeService.php">
+      <file leaf-file-name="EloquentPodcastRepository.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="870" selection-end="886" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="735">
+            <state line="16" column="23" selection-start="406" selection-end="406" vertical-scroll-proportion="0.24725275" vertical-offset="0" max-vertical-offset="1035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PodcastBuilder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/PodcastBuilder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="555">
               <folding>
-                <element signature="e#43#107#0" expanded="true" />
+                <element signature="e#794#1045#0" expanded="false" />
+                <element signature="e#1051#1116#0" expanded="false" />
+                <element signature="e#1122#1195#0" expanded="false" />
+                <element signature="e#1201#1319#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Brigham/User/Repositories/UserRepository.php">
+      <file leaf-file-name="ShowBuilder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/ShowBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+            <state line="13" column="45" selection-start="435" selection-end="435" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowAdapterInterface.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowAdapter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/ShowAdapter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="25" selection-start="383" selection-end="383" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1590">
               <folding />
             </state>
           </provider>
@@ -134,12 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/Podcast/podcast.js" />
-        <option value="$PROJECT_DIR$/public/js/podcast/podcast.js" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/app/Brigham/User/Repositories/UsersRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Brigham/User/Repositories/UsersRepository.php" />
-        <option value="$PROJECT_DIR$/app/Brigham/User/Repositories/UserRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/tests/functional.suite.yml" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
@@ -181,18 +172,25 @@
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/show/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" />
-        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
         <option value="$PROJECT_DIR$/app/Brigham/User/Services/UserService.php" />
         <option value="$PROJECT_DIR$/app/views/episode/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/PodcastBuilder.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/ShowAdapter.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/ShowBuilder.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/PodcastRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="1280" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="width" value="1920" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -286,7 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="Brigham" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,11 +302,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="Brigham" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="episode" />
+              <option name="myItemId" value="Podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podcast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Brigham" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Podcast" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,7 +405,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="1280" y="22" width="1920" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -390,7 +414,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30638298" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34583333" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2296875" sideWeight="0.79148936" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.153125" sideWeight="0.79148936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28629443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16875" sideWeight="0.2070922" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -426,7 +450,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -557,20 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="659" selection-end="659" vertical-scroll-proportion="-9.75" vertical-offset="141" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/PodcastRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="58" selection-end="58" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/SessionRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="525">
@@ -599,37 +609,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="318" selection-end="318" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/ShowBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="43" selection-start="948" selection-end="948" vertical-scroll-proportion="-12.5" vertical-offset="90" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/ShowAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="20" selection-start="2988" selection-end="2988" vertical-scroll-proportion="-49.958332" vertical-offset="1" max-vertical-offset="1335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/simplepie/simplepie/library/SimplePie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="624" column="20" selection-start="14848" selection-end="14848" vertical-scroll-proportion="-0.75" vertical-offset="8727" max-vertical-offset="45705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/PodcastBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="782" selection-end="782" vertical-scroll-proportion="-6.25" vertical-offset="165" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
@@ -671,20 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="42" selection-start="623" selection-end="623" vertical-scroll-proportion="-1.875" vertical-offset="360" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdater.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="20" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-11.25" vertical-offset="390" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ShowController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="25" selection-start="160" selection-end="160" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="600">
@@ -695,13 +663,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/RssFeedController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="30" selection-start="714" selection-end="714" vertical-scroll-proportion="-11.875" vertical-offset="300" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastServiceInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="191" selection-end="191" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
@@ -736,22 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/EpisodeAdapterInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/EpisodeService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="870" selection-end="886" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="735">
-          <folding>
-            <element signature="e#43#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
@@ -780,10 +725,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
+    <entry file="file://$PROJECT_DIR$/app/views/episode/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="36" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-20.0" vertical-offset="180" max-vertical-offset="1290">
+        <state line="65" column="58" selection-start="2010" selection-end="2010" vertical-scroll-proportion="-5.0" vertical-offset="855" max-vertical-offset="1830">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="46" selection-start="734" selection-end="734" vertical-scroll-proportion="0.42669585" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/EpisodeService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="870" selection-end="886" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="735">
+          <folding>
+            <element signature="e#43#107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -794,9 +755,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episode/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastServiceInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="58" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.1904762" vertical-offset="855" max-vertical-offset="1830">
+        <state line="13" column="20" selection-start="228" selection-end="228" vertical-scroll-proportion="0.1280683" vertical-offset="0" max-vertical-offset="937">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/commands/UpdatePodcastsCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="30" selection-start="848" selection-end="848" vertical-scroll-proportion="-16.541666" vertical-offset="203" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/EpisodeAdapterInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/ShowAdapterInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/ShowAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="383" selection-end="383" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/ShowBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="435" selection-end="435" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Builders/Providers/SimplePie/PodcastBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="555">
+          <folding>
+            <element signature="e#794#1045#0" expanded="false" />
+            <element signature="e#1051#1116#0" expanded="false" />
+            <element signature="e#1122#1195#0" expanded="false" />
+            <element signature="e#1201#1319#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.0" vertical-offset="120" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/PodcastRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="107" selection-end="107" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EloquentPodcastRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="406" selection-end="406" vertical-scroll-proportion="0.24725275" vertical-offset="0" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>

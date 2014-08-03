@@ -13,6 +13,23 @@ class ShowAdapter implements ShowAdapterInterface {
         $this->provider = $provider;
     }
 
+    public function getCategories () {
+        $categories = [];
+        $itunes_cats = $this->provider->get_channel_tags(SIMPLEPIE_NAMESPACE_ITUNES, 'category');
+
+        if ($itunes_cats) {
+            foreach ($itunes_cats as $itunes_cat) {
+                $category = $itunes_cat['attribs']['']['text'];
+
+                if ($category) {
+                    $categories[] = $category;
+                }
+            }
+        }
+
+        return $categories;
+    }
+
     public function getShow(){
         return $this->show;
     }

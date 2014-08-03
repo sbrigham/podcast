@@ -41,16 +41,9 @@ class UpdatePodcastsCommand extends Command {
 	 */
 	public function fire()
 	{
-        $show = $this->option('show');
+        $this->pod_service->updatePodcasts();
 
-        if(! is_null($show)) {
-            $this->pod_service->updatePodcast($show);
-        } else {
-            // Update all podcast episodes
-            $this->pod_service->updatePodcasts();
-        }
-
-        $this->info('Done!');
+        $this->info('Podcasts have been updated!');
 	}
 
 	/**

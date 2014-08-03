@@ -19,11 +19,12 @@ class ShowBuilder implements ShowBuilderInterface {
     public function build()
     {
         $this->show = [
-            'name' => $this->show_adapter->getName(),
-            'feed_url' => $this->show_adapter->getFeedUrl(),
-            'description' => $this->show_adapter->getDescription(),
-            'image_src' => $this->show_adapter->getImageSrc(),
-            'last_build_date' => $this->show_adapter->getLastBuildDate()
+            'name'            => $this->show_adapter->getName(),
+            'feed_url'        => $this->show_adapter->getFeedUrl(),
+            'description'     => $this->show_adapter->getDescription(),
+            'image_src'       => $this->show_adapter->getImageSrc(),
+            'last_build_date' => $this->show_adapter->getLastBuildDate(),
+            'categories'      => $this->show_adapter->getCategories()
         ];
 
         foreach ($this->show_adapter->getEpisodes() as $episode) {

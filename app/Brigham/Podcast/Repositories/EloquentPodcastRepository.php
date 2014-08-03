@@ -14,6 +14,7 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
      */
     public function create(array $show, array $episodes)
     {
+        // TODO to add categories ...
         $show = Show::create($show);
 
         foreach($episodes as $episode) {
