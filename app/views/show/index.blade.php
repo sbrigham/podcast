@@ -1,42 +1,19 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container" id="shows">
-    @foreach(array_chunk($shows->getCollection()->all(), 3) as $show)
-      <div class="row">
-          @foreach($show as $item)
-          <article class="show col col-md-4">
-              <div class="well">
-                  <div>
-                      <a href="{{ URL::route('show', ['show_id' => $item['id']]) }}">
-                          <img src="{{ $item['image_src'] }}" class="img-responsive"/>
-                      </a>
-                  </div>
-                  <div class="show-name">
-                      <a href="{{ URL::route('show', ['show_id' => $item['id']]) }}">
-                          <h3> {{ $item['name'] }} </h3>
-                      </a>
-                  </div>
-              </div>
-          </article>
-          @endforeach
-      </div>
-    @endforeach
 
-    {{ $shows->links() }}
+{{ HTML::style('css/show/index.css'); }}
+
+<div class="container" id="shows" ng-app>
+    <div ng-controller="ShowsController">
+        <ul>
+            <li ng-repeat="show in shows">
+                {{ shows.name }}
+            </li>
+        </ul>
+    </div>
 </div>
 
-<style>
-    .show-name h3{
-        font-size: 21px;
-    }
-
-    .show {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-</style>
-
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+<script src="/js/podcast/main.js"></script>
 @stop
-
