@@ -16,9 +16,13 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-        $shows = $this->repo->getShows();
 		return View::make('show.index', compact('shows'));
 	}
+
+    public function all()
+    {
+        return $this->repo->getShows();
+    }
 
 	/**
 	 * Display the specified resource.

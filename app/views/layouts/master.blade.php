@@ -22,6 +22,9 @@
           <ul class="nav navbar-nav">
               <li> {{ HTML::linkRoute('shows', 'Shows') }} </li>
           </ul>
+          <ul class="nav navbar-nav">
+              <li> {{ HTML::linkRoute('episodes', 'Episodes') }} </li>
+          </ul>
           @if(! Auth::check())
           <ul class="nav navbar-nav">
               <li> {{ HTML::link('/login', 'Login') }} </li>

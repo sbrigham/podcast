@@ -2,58 +2,8 @@
 
 
 @section('content')
-
 <div class="content well">
-    <div id="show-data">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="{{ $show['image_src']}}" class="img-responsive"/>
-            </div>
-            <div id="show-description" class="col-md-9">
-                <div>
-                    <h1 id="show-name-header"> {{ $show['name'] }} </h1>
-                </div>
-                <hr>
-                <p>
-                    {{ $show['description'] }}
-                </p>
-            </div>
-        </div>
-    </div>
-    <hr>
-
-    <div id="episodes">
-        @foreach (array_chunk($show->episodes_paginated->getCollection()->all(), 3) as $row)
-        <div class="row">
-            @foreach($row as $item)
-            <article class="col col-md-4">
-                <a href="{{ URL::route('episode', ['episode_id' => $item['id'], 'show_id' => $show['id']]) }}">
-                    <div class="episode-guts well">
-                        <div class="episode-date container-fluid">
-                            {{ date('F jS, Y', strtotime($item['published_at'])) }}
-                        </div>
-                        <div class="container-fluid">
-                            <h5 class="episode-name">
-                                {{ $item['name'] }}
-                            </h5>
-                        </div>
-                        <hr>
-                        <div class="container-fluid">
-                            <audio src="{{ $item['src'] }}" controls width="100%">
-
-                            </audio>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            @endforeach
-        </div>
-        @endforeach
-    </div>
-
-    <div id ="pager" class="container">
-        {{ $show->episodes_paginated->links() }}
-    </div>
+    @include('episode.angular')
 </div>
 
 

@@ -1,5 +1,5 @@
-function ShowsController ($scope, $http) {
-    $http.get('/show/all').success(function (shows) {
-        $scope.shows = shows;
+function EpisodesController ($scope, $http) {
+    $http.get('/episodes/all').success(function (episodes) {
+        $scope.episodes = episodes;
     });
 }

@@ -18,4 +18,9 @@ class EpisodeRepository {
     {
         return Episode::create($episode);
     }
+
+    public function getAll()
+    {
+        return Episode::all();
+    }
 }

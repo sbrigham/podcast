@@ -32,6 +32,16 @@ class EpisodeService {
         return $episode;
     }
 
+    public function getAllEpisodes ($json = true) {
+        $episodes = $this->episode_repo->getAll();
+
+        if ($json) {
+            return $episodes->toJson();
+        }
+
+        return $episodes;
+    }
+
     public function getEpisodeAverageRating($episode_id)
     {
         return $this->episode_rating_repo->getAverageRating($episode_id);

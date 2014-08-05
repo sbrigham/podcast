@@ -19,4 +19,8 @@ class Show extends \Eloquent {
     {
         return $this->episodes()->orderBy('published_at', 'DESC')->paginate(6);
     }
+
+    public function categories() {
+        return $this->belongsToMany('Category', 'show_categories', 'show_id', 'category_id');
+;    }
 }

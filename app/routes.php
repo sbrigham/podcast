@@ -10,7 +10,6 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
 App::bind('Brigham\Podcast\Repositories\PodcastRepositoryInterface', 'Brigham\Podcast\Repositories\EloquentPodcastRepository');
 App::bind('Brigham\Podcast\Services\PodcastServiceInterface', 'Brigham\Podcast\Services\PodcastService');
 
@@ -51,6 +50,10 @@ Route::get('/env', function(){
 
 Route::get('show', 'ShowController@index');
 Route::get('shows',['as' =>'shows', 'uses' => 'ShowController@index']);
+Route::get('show/all', 'ShowController@all');
+
+Route::get('episodes', ['as' => 'episodes', 'uses' => 'EpisodeController@index']);
+Route::get('episodes/all', 'EpisodeController@all');
 
 // Brigham Front Routes
 Route::get('/{show_id}/about', 'ShowController@show');

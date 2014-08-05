@@ -1,5 +1,6 @@
 <?php namespace Brigham\Podcast\Repositories;
 
+use Category;
 use Episode;
 use Show;
 
@@ -14,8 +15,14 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
      */
     public function create(array $show, array $episodes)
     {
-        // TODO to add categories ...
+        $categories = $show['categories'];
+        unset($show['categories']);
         $show = Show::create($show);
+
+        foreach($categories as $category) {
+            $cat = Category::firstOrCreate(['name' => $category]);
+            $show->categories()->attach($cat);
+        }
 
         foreach($episodes as $episode) {
             $episode = Episode::create($episode);
@@ -53,9 +60,9 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
      * @param int $per_page
      * @return mixed
      */
-    public function getShows($per_page = 15)
+    public function getShows()
     {
-        return Show::paginate($per_page);
+        return $shows = Show::with('categories')->remember('60')->get()->toJson();
     }
 
     public function saveEpisode($episode)

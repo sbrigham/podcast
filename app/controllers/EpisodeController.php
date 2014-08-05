@@ -16,16 +16,18 @@ class EpisodeController extends \BaseController {
         $this->show_repo = $show_repo;
     }
 
+    public function all() {
+        return $this->episode_service->getAllEpisodes();
+    }
+
 	/**
 	 * Display a listing of a shows episodes.
 	 *
 	 * @return Response
 	 */
-	public function index($show_id)
+	public function index()
 	{
-        $show = $this->show_repo->getShow($show_id);
-
-		return View::make('episode.index', compact('show'));
+		return View::make('episode.index');
 	}
 
 	/**

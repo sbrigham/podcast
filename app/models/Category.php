@@ -8,6 +8,9 @@ class Category extends \Eloquent {
      *
      * @var string
      */
-    protected $table = 'show_categories';
+    protected $table = 'categories';
 
+    public function shows() {
+        return $this->belongsToMany('Show');
+    }
 }

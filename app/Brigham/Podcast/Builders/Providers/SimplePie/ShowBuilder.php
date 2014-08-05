@@ -34,6 +34,11 @@ class ShowBuilder implements ShowBuilderInterface {
         }
     }
 
+    public function getCategories()
+    {
+
+    }
+
     public function getShow()
     {
         return $this->show;
