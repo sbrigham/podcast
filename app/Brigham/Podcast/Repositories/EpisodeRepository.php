@@ -26,6 +26,6 @@ class EpisodeRepository {
 
     public function getEpisodes($show_id)
     {
-        return Episode::where('show_id', $show_id)->get()->toJson();
+        return Episode::where('show_id', $show_id)->get();
     }
 }

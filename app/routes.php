@@ -53,6 +53,7 @@ Route::get('shows',['as' =>'shows', 'uses' => 'ShowController@index']);
 Route::get('show/all', 'ShowController@all');
 
 Route::get('episodes', ['as' => 'episodes', 'uses' => 'EpisodeController@index']);
+Route::get('episode/{episode}', ['as' => 'episode.id', 'uses' => 'EpisodeController@show']);
 Route::get('episodes/all', 'EpisodeController@all');
 
 // Brigham Front Routes

@@ -37,9 +37,9 @@ class EpisodeController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($show_id, $episode_id)
+	public function show($episode_id)
 	{
-        $episode = $this->episode_service->getEpisode($show_id, $episode_id);
+        $episode = $this->episode_service->getEpisode($episode_id);
         $episode['average_rating'] = $this->episode_service->getEpisodeAverageRating($episode_id);
 
         if (Auth::check()) {

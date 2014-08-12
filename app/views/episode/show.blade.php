@@ -100,16 +100,15 @@
         };
 
         $.post("{{ URL::route('episode.rating') }}", data, function() {
-            console.log('Stored Rating');
+            console.log('Update Rating');
         });
     });
 
     new AudioSession($('#episode'), {
-        checks_exist    : false,
         episode_id      : "{{ $episode['id'] }}",
+        audio_id        : "{{ $episode['id'] }}",
         get_session_url : "{{ URL::route('session.index', ['episode' => $episode['id']]) }}",
-        audio_id: "{{ $episode['id']}}",
-        set_session_url : "{{ URL::route('session.store') }}",
+        set_session_url : "{{ URL::route('session.store') }}"
     });
 </script>
 @endif

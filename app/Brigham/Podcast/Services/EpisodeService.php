@@ -17,14 +17,10 @@ class EpisodeService {
         $this->episode_rating_repo = $episode_rating_repo;
     }
 
-    public function getEpisode($show_id, $episode_id)
+    public function getEpisode($episode_id)
     {
         try {
             $episode = $this->episode_repo->getEpisode($episode_id);
-
-            if($show_id != $episode->show_id) {
-                App::abort(404);
-            }
         } catch(ModelNotFoundException $e) {
             App::abort(404);
         }
@@ -34,6 +30,10 @@ class EpisodeService {
 
     public function getAllEpisodes ($json = true) {
         $episodes = $this->episode_repo->getAll();
+
+        foreach ($episodes as $episode) {
+            $episode->link = route('episode.id', ['episode' => $episode->id]);
+        }
 
         if ($json) {
             return $episodes->toJson();
@@ -54,6 +54,12 @@ class EpisodeService {
 
     public function getEpisodes($show_id)
     {
-        return $this->episode_repo->getEpisodes($show_id);
+        $episodes = $this->episode_repo->getEpisodes($show_id);
+
+        foreach ($episodes as $episode) {
+            $episode->link = route('episode.id', ['episode' => $episode->id]);
+        }
+
+        return $episodes->toJson();
     }
 }
