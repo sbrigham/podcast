@@ -2,5 +2,5 @@
 
 @section('content')
     {{ HTML::style('css/show/index.css') }}
-    @include('show.angular')
+    @include('show.angular_shows')
 @stop

@@ -51,4 +51,9 @@ class EpisodeService {
     {
         return $this->episode_rating_repo->getRating($episode_id, $user_id);
     }
+
+    public function getEpisodes($show_id)
+    {
+        return $this->episode_repo->getEpisodes($show_id);
+    }
 }

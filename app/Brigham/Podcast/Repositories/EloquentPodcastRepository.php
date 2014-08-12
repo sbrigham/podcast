@@ -62,7 +62,13 @@ class EloquentPodcastRepository implements PodcastRepositoryInterface {
      */
     public function getShows()
     {
-        return $shows = Show::with('categories')->remember('60')->get()->toJson();
+        $shows = Show::with('categories')->remember('60')->get();
+
+        foreach ($shows as $show) {
+            $show->link = route('show', ['show' => $show->id]);
+        }
+
+        return $shows->toJson();
     }
 
     public function saveEpisode($episode)

@@ -27,7 +27,8 @@ class EpisodeController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('episode.index');
+        $show_id = Input::get('show');
+        return $this->episode_service->getEpisodes($show_id);
 	}
 
 	/**

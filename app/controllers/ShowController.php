@@ -32,7 +32,7 @@ class ShowController extends \BaseController {
 	 */
 	public function show($id)
 	{
-        $show = $this->repo->getShow($id, false);
+        $show = $this->repo->getShow($id);
 
 		return View::make('show.show', compact('show'));
 	}

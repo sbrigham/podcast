@@ -1,6 +1,7 @@
 <?php namespace Brigham\Podcast\Repositories;
 
 use Show;
+use Episode;
 class ShowRepository {
     public function getShow($show_id,$with_episodes = true)
     {

@@ -8,5 +8,5 @@ composer.lock
 Thumbs.db
 .idea/workspace.xml
 node_modules
-
+public/js/vendor
 tests/_output/*

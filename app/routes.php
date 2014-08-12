@@ -57,7 +57,7 @@ Route::get('episodes/all', 'EpisodeController@all');
 
 // Brigham Front Routes
 Route::get('/{show_id}/about', 'ShowController@show');
-Route::get('/{show_id}', [ 'as'=> 'show', 'uses' => 'EpisodeController@index']);
+Route::get('/{show_id}', [ 'as'=> 'show', 'uses' => 'ShowController@show']);
 Route::get('/{show_id}/episode/{episode_id}', ['as' => 'episode', 'uses' => 'EpisodeController@show']);
 
 // Handle 404 Error

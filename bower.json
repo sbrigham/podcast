@@ -1,0 +1,7 @@
+{
+  "name": "podcast",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.21"
+  }
+}
