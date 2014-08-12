@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EpisodeController.php" afterPath="$PROJECT_DIR$/app/controllers/EpisodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EpisodeRepository.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/EpisodeRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Brigham/Podcast/Services/EpisodeService.php" afterPath="$PROJECT_DIR$/app/Brigham/Podcast/Services/EpisodeService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/angular.php" afterPath="$PROJECT_DIR$/app/views/episode/angular.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/show/angular_show_episodes.php" afterPath="$PROJECT_DIR$/app/views/show/angular_show_episodes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/episode/show.blade.php" afterPath="$PROJECT_DIR$/app/views/episode/show.blade.php" />
-    </list>
+    <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="" />
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,7 +71,7 @@
       <file leaf-file-name="audio_session.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/podcast/audio_session.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="297" selection-end="297" vertical-scroll-proportion="0.27522936" vertical-offset="0" max-vertical-offset="1425">
+            <state line="16" column="28" selection-start="541" selection-end="541" vertical-scroll-proportion="-0.76605505" vertical-offset="741" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -135,7 +126,6 @@
         <option value="$PROJECT_DIR$/app/models/EpisodeSession.php" />
         <option value="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/SessionRepository.php" />
         <option value="$PROJECT_DIR$/app/controllers/EpisodeSessionController.php" />
-        <option value="$PROJECT_DIR$/public/js/podcast/audio_session.js" />
         <option value="$PROJECT_DIR$/app/controllers/EpisodeRatingController.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/models/EpisodeRating.php" />
@@ -182,6 +172,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/views/show/angular_show_episodes.php" />
         <option value="$PROJECT_DIR$/app/views/episode/show.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/podcast/audio_session.js" />
       </list>
     </option>
   </component>
@@ -811,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/podcast/audio_session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="297" selection-end="297" vertical-scroll-proportion="0.27522936" vertical-offset="0" max-vertical-offset="1425">
+        <state line="16" column="28" selection-start="541" selection-end="541" vertical-scroll-proportion="-0.76605505" vertical-offset="741" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>

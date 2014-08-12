@@ -10,11 +10,11 @@ function AudioSession(node, options) {
 
 $.extend(AudioSession, {
     DEFAULTS:{
-        checks_exist    : false,
+        checks_exist    : false, // Needs to be implemented. Checks whether an episode src is valid
         get_session_url : null,
+        set_session_url : null,
         load_session    : true, // Whether or not to load the current time
-        ping_time       :  5, // The number of seconds to update a user session
-        set_session_url : null
+        ping_time       :  5 // The number of seconds to update a user session
     }
 });
 
