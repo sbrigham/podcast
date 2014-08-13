@@ -12,7 +12,6 @@ a roadmap of this application's features.
 
 #### Known Problems / TODO's
 - No user roles
-- User can't log in
 - Angular app needs cleanup / centralized
 - Need better flow between pages
 - Pagination?
