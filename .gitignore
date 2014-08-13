@@ -6,7 +6,8 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
-.idea/workspace.xml
+.idea/*
+.idea
 node_modules
 public/js/vendor
 tests/_output/*
