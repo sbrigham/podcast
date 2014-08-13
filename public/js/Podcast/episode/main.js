@@ -1,6 +1,6 @@
 function EpisodesController ($scope, $http, $location) {
 
-    // I know this is stupid. Working to fix soon
+    // This is stupid. Fix later
     var path = window.location.pathname;
     var show_id = path.replace('/', '');
 

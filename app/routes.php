@@ -20,6 +20,8 @@ Route::get('/mail', function(){
 });
 
 // Admin Routes
+
+// TODO have different use roles to protect this
 Route::group(['prefix' => 'admin', 'before' => 'auth'], function() {
     Route::get('/', 'AdminDashboardController@index');
 
