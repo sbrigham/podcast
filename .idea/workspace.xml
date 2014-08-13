@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b23160-6bd3-4f5c-ae42-48d76eac1f12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistrationController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistrationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/SessionsController.php" afterPath="$PROJECT_DIR$/app/controllers/SessionsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="podcast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +27,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <file leaf-file-name="SessionsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="26" selection-start="875" selection-end="875" vertical-scroll-proportion="0.32159266" vertical-offset="0" max-vertical-offset="1005">
+            <state line="39" column="27" selection-start="762" selection-end="762" vertical-scroll-proportion="-15.0" vertical-offset="225" max-vertical-offset="960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/RegistrationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="28" selection-start="942" selection-end="942" vertical-scroll-proportion="-16.875" vertical-offset="300" max-vertical-offset="930">
               <folding>
-                <element signature="e#7#392#0" expanded="false" />
+                <element signature="e#7#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormValidator.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laracasts/validation/src/Laracasts/Validation/FormValidator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="25" selection-start="871" selection-end="871" vertical-scroll-proportion="-15.333333" vertical-offset="322" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="35" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Brigham/User/Repositories/UserRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="454" column="0" selection-start="9465" selection-end="9465" vertical-scroll-proportion="0.17936508" vertical-offset="6412" max-vertical-offset="45375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Guard.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="341" column="20" selection-start="7693" selection-end="7693" vertical-scroll-proportion="-6.25" vertical-offset="4905" max-vertical-offset="11145">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="11" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="435">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,11 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/podcast/audio.js" />
-        <option value="$PROJECT_DIR$/app/models/EpisodeSession.php" />
-        <option value="$PROJECT_DIR$/app/Brigham/Podcast/Repositories/SessionRepository.php" />
-        <option value="$PROJECT_DIR$/app/controllers/EpisodeSessionController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/EpisodeRatingController.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/models/EpisodeRating.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_28_231910_create_episode_sessions_table.php" />
@@ -103,6 +163,11 @@
         <option value="$PROJECT_DIR$/public/js/podcast/audio_session.js" />
         <option value="$PROJECT_DIR$/public/js/podcast/episode/main.js" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/app/views/sessions/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/SessionsController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/RegistrationController.php" />
+        <option value="$PROJECT_DIR$/vendor/laracasts/validation/src/Laracasts/Validation/FormValidator.php" />
       </list>
     </option>
   </component>
@@ -186,7 +251,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,6 +266,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,71 +405,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RssFeedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="714" selection-end="714" vertical-scroll-proportion="-11.875" vertical-offset="300" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.375" vertical-offset="225" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Repositories/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="272" selection-end="272" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RegistrationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-4.375" vertical-offset="645" max-vertical-offset="1470">
-          <folding>
-            <element signature="e#7#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Adapters/Providers/SimplePie/EpisodeAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="204" selection-end="212" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Forms/RegistrationForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="302" selection-end="302" vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Services/PodcastUpdater.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="46" selection-start="734" selection-end="734" vertical-scroll-proportion="0.42669585" vertical-offset="0" max-vertical-offset="1020">
@@ -440,19 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="1" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
-          <folding>
-            <marker date="1406511546000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406511546000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406511546000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406511546000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1406511546000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,13 +516,6 @@
     <entry file="file://$PROJECT_DIR$/app/Brigham/Podcast/Repositories/PodcastRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="20" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0952381" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="554" column="27" selection-start="11703" selection-end="11703" vertical-scroll-proportion="0.34603176" vertical-offset="7807" max-vertical-offset="45375">
           <folding />
         </state>
       </provider>
@@ -691,7 +675,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="0" selection-start="1791" selection-end="1791" vertical-scroll-proportion="1.4012251" vertical-offset="0" max-vertical-offset="1050">
           <folding>
-            <element signature="e#43#107#0" expanded="true" />
+            <element signature="e#43#107#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,12 +694,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/storage/logs/laravel.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-9.1130295" vertical-offset="5805" max-vertical-offset="198495">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="27" selection-start="2224" selection-end="2224" vertical-scroll-proportion="0.7276995" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="26" selection-start="875" selection-end="875" vertical-scroll-proportion="0.32159266" vertical-offset="0" max-vertical-offset="1005">
           <folding>
             <element signature="e#7#392#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="341" column="20" selection-start="7693" selection-end="7693" vertical-scroll-proportion="-6.25" vertical-offset="4905" max-vertical-offset="11145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="27" selection-start="762" selection-end="762" vertical-scroll-proportion="-15.0" vertical-offset="225" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Services/UserService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Brigham/User/Repositories/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="269" selection-end="269" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RegistrationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="28" selection-start="942" selection-end="942" vertical-scroll-proportion="-16.875" vertical-offset="300" max-vertical-offset="930">
+          <folding>
+            <element signature="e#7#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laracasts/validation/src/Laracasts/Validation/FormValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="25" selection-start="871" selection-end="871" vertical-scroll-proportion="-15.333333" vertical-offset="322" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1725" column="45" selection-start="48330" selection-end="48330" vertical-scroll-proportion="0.40680712" vertical-offset="25534" max-vertical-offset="194805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="454" column="0" selection-start="9465" selection-end="9465" vertical-scroll-proportion="0.17936508" vertical-offset="6412" max-vertical-offset="45375">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -46,47 +46,11 @@ class RegistrationController extends \BaseController {
     public function store()
     {
         $this->regForm->validate(Input::all());
-
-
         $user = $this->userService->make(Input::all());
         Auth::login($user);
 
         Flash::success('Thank you for creating an account!');
 
         return Redirect::route('home');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-    }
-
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
-    }
-
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }

@@ -25,7 +25,6 @@ class SessionsController extends \BaseController {
 	public function store()
 	{
         // validate
-
         $input = Input::all();
 
         $attempt = Auth::attempt([
@@ -33,10 +32,12 @@ class SessionsController extends \BaseController {
             'password' => $input['password']
         ], true);
 
-        Flash::message('Welcome '. Auth::user()['username'].'!');
+        if ($attempt) {
+            Flash::message('Welcome '. Auth::user()['username'].'!');
+            return Redirect::to('/');
+        }
 
-        if ($attempt) return Redirect::intended('/');
-
+        Flash::error('There were errors with your login attempt'); // actualy validate the right way
         return Redirect::to('/login');
 	}
 
