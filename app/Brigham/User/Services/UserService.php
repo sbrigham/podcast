@@ -14,7 +14,7 @@ class UserService {
         $user = $this->user_repo->create($user);
 
 
-        // send email
+        // send email and do whatever else
 
 
         //

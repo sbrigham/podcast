@@ -8,6 +8,8 @@ use User;
 class UserRepository implements UserRepositoryInterface {
     public function create($user) {
         $user['password'] = Hash::make($user['password']);
-        return User::create($user);
+        $user = User::create($user);
+        $user->addRole('public');
+        return $user;
     }
 }

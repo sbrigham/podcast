@@ -20,6 +20,21 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password');
 
+    public function roles()
+    {
+        return $this->belongsToMany('Role', 'users_roles');
+    }
+
+    /**
+     * Find out if user has a specific role
+     *
+     * $return boolean
+     */
+    public function hasRole($check)
+    {
+        return in_array($check, array_fetch($this->roles->toArray(), 'name'));
+    }
+
 	/**
 	 * Get the unique identifier for the user.
 	 *
@@ -78,6 +93,45 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
      */
     public function setPasswordAttribute ($password) {
         $this->attributes['password'] = Hash::make($password);
+    }
+
+    /**
+     * Add roles to user
+     */
+    public function addRole($title)
+    {
+        $assigned_roles = array();
+
+        $roles = Role::all()->toArray();
+
+        switch ($title) {
+            case 'admin':
+                $assigned_roles[] = $this->getIdInArray($roles, 'admin');
+                $assigned_roles[] = $this->getIdInArray($roles, 'public');
+            case 'public':
+                $assigned_roles[] = $this->getIdInArray($roles, 'public');
+                break;
+            default:
+                throw new \Exception("The employee status entered does not exist");
+        }
+
+        $this->roles()->attach($assigned_roles);
+    }
+
+    /**
+     * Get key in array with corresponding value
+     *
+     * @return int
+     */
+    private function getIdInArray($array, $term)
+    {
+        foreach ($array as $key) {
+            if ($key['name'] == $term) {
+                return $key['id'];
+            }
+        }
+
+        throw new UnexpectedValueException;
     }
 
 	/**

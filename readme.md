@@ -11,13 +11,12 @@ A domain name is in the works. This website will be put live once the first stab
 a roadmap of this application's features.
 
 #### Known Problems / TODO's
-- No user roles
 - Angular app needs cleanup / centralized
 - Need better flow between pages
 - Pagination?
 - Bootstrap grid cleanup
 - Show stars on episode list page
-- Add disqus on each episode page
+- Disqus comments integration
 
 
 ## Laravel PHP Framework

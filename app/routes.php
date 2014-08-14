@@ -1,15 +1,12 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
+Route::filter('admin', function()
+{
+    if (! Auth::user()->hasRole('admin')) {
+        return Redirect::to('/');
+    }
+;});
+
 App::bind('Brigham\Podcast\Repositories\PodcastRepositoryInterface', 'Brigham\Podcast\Repositories\EloquentPodcastRepository');
 App::bind('Brigham\Podcast\Services\PodcastServiceInterface', 'Brigham\Podcast\Services\PodcastService');
 
@@ -21,8 +18,7 @@ Route::get('/mail', function(){
 
 // Admin Routes
 
-// TODO have different use roles to protect this
-Route::group(['prefix' => 'admin', 'before' => 'auth'], function() {
+Route::group(['prefix' => 'admin', 'before' => 'admin'], function() {
     Route::get('/', 'AdminDashboardController@index');
 
     Route::resource('rss', 'RssFeedController',
