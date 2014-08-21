@@ -1,22 +1,9 @@
 ## Podcast Listening Application
 
 This website is a huge work in progress with many parts that need to be cleaned up or don't work at all. There are also
-many issues that need to be addressed. More details will come of the status of the project as well as fixes to some of the bugs.
+many issues that need to be addressed.
 
-I became a podcast fan in mid 2012. This application was originally built to be a place to listen to podcasts and rate
-episodes (because this never existed). Since starting the project I have thought of many ideas to make this tiny application
-grow into something much bigger and user friendly.
-
-A domain name is in the works. This website will be put live once the first stable release happens. After that, I will list
-a roadmap of this application's features.
-
-#### Known Problems / TODO's
-- Angular app needs cleanup / centralized
-- Need better flow between pages
-- Pagination?
-- Bootstrap grid cleanup
-- Show stars on episode list page
-- Disqus comments integration
+I am currently working on converting the frontend to angular. More info to come soon.
 
 
 ## Laravel PHP Framework
