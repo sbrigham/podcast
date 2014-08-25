@@ -25,6 +25,7 @@ class EpisodeService {
             App::abort(404);
         }
 
+        $episode->description = strip_tags($episode->description);
         return $episode;
     }
 
@@ -54,12 +55,6 @@ class EpisodeService {
 
     public function getEpisodes($show_id)
     {
-        $episodes = $this->episode_repo->getEpisodes($show_id);
-
-        foreach ($episodes as $episode) {
-            $episode->link = route('episode.id', ['episode' => $episode->id]);
-        }
-
-        return $episodes->toJson();
+        return $episodes = $this->episode_repo->getEpisodes($show_id);
     }
 }

@@ -20,7 +20,8 @@ class EpisodeBuilder implements EpisodeBuilderInterface {
             'description' => $this->episode_adapter->getDescription(),
             'image_src' => $this->episode_adapter->getImageSrc(),
             'src' => $this->episode_adapter->getSrc(),
-            'published_at' => $this->episode_adapter->getPublishedAt()
+            'published_at' => $this->episode_adapter->getPublishedAt(),
+            'duration' => $this->episode_adapter->getDuration()
         ];
     }
 

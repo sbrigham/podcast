@@ -8,4 +8,5 @@ interface EpisodeAdapterInterface {
     public function getDescription();
     public function getImageSrc();
     public function getPublishedAt();
+    public function getDuration();
 }

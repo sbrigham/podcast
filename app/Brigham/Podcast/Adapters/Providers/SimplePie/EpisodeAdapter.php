@@ -17,6 +17,11 @@ class EpisodeAdapter implements EpisodeAdapterInterface {
         return $this->item->get_description();
     }
 
+    public function getDuration() {
+
+        return $this->item->get_enclosure()->duration;
+    }
+
     public function getImageSrc()
     {
         // IF RSS HAS ITUNES DATA
