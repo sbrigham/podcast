@@ -2,6 +2,9 @@
     <div class="form-group">
         <input class="form-control" type="text" placeholder="Search Shows" ng-model="search">
     </div>
+    <div ng-show='loading' style="text-align: center">
+        <i class="fa fa-5x fa-spinner fa-spin"></i>
+    </div>
     <div>
         <article class="show col col-md-4" ng-repeat="show in shows | filter:search">
             <a ui-sref="showEpisodes({ id: <% show.id %> })">

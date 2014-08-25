@@ -6,6 +6,7 @@ angular.module('podcastApp.controllers').controller('EpisodesController', functi
             $scope.show = data;
         });
 
+    $scope.loading = true;
     Podcast.getEpisodes($scope.show_id)
         .success(function(data) {
             for (var x=0; x<data.length; x++) {
