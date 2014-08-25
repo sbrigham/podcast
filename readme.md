@@ -1,10 +1,9 @@
 ## Podcast Listening Application
 
-This website is a huge work in progress with many parts that need to be cleaned up or don't work at all. There are also
-many issues that need to be addressed.
+The goal of the application is to provide a place for people to listen to podcasts, rate them, discuss them and more. This is
+a responsive frontend application written using angularjs and bootstrap with a Laravel backend / api.
 
-I am currently working on converting the frontend to angular. More info to come soon.
-
+There are some issues that need to be addressed and cleanup before I will be accepting contributors.
 
 ## Laravel PHP Framework
 
