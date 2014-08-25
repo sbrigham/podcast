@@ -16,7 +16,12 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-        return Response::json($this->repo->getShows());
+        $shows = $this->repo->getShows();
+        foreach($shows as $show => $value) {
+            $shows[$show]->name = htmlspecialchars_decode($shows[$show]->name);
+        }
+
+        return Response::json($shows);
 	}
 
 	/**
@@ -27,6 +32,9 @@ class ShowController extends \BaseController {
 	 */
 	public function show($id)
 	{
-        return Response::json($this->repo->getShow($id));
+        $show = $this->repo->getShow($id);
+        $show->name = html_entity_decode($show->name);
+
+        return Response::json($show);
 	}
 }

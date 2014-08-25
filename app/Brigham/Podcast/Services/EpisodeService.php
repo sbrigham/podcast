@@ -24,8 +24,9 @@ class EpisodeService {
         } catch(ModelNotFoundException $e) {
             App::abort(404);
         }
-
+        $episode->name = html_entity_decode($episode->name);
         $episode->description = strip_tags($episode->description);
+        $episode->description = html_entity_decode($episode->description);
         return $episode;
     }
 
@@ -55,6 +56,11 @@ class EpisodeService {
 
     public function getEpisodes($show_id)
     {
-        return $episodes = $this->episode_repo->getEpisodes($show_id);
+        $episodes = $this->episode_repo->getEpisodes($show_id);
+
+        foreach($episodes as $index => $value) {
+            $episodes[$index]->name = html_entity_decode($episodes[$index]->name);
+        }
+        return $episodes;
     }
 }

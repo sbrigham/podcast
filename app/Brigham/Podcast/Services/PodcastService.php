@@ -80,6 +80,7 @@ class PodcastService implements PodcastServiceInterface {
 
         }
 
+        $show->name = strip_tags($show->name);
         return $show;
     }
 }
