@@ -51,6 +51,6 @@ class RegistrationController extends \BaseController {
 
         Flash::success('Thank you for creating an account!');
 
-        return Redirect::route('home');
+        return Redirect::to('');
     }
 }

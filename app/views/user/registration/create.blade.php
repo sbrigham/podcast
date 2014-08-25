@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('index')
 
 @section('content')
     <h2>Create an Account</h2>

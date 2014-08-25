@@ -1,0 +1,19 @@
+<div class="container" id="shows">
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Search Shows" ng-model="search">
+    </div>
+    <div>
+        <article class="show col col-md-4" ng-repeat="show in shows | filter:search">
+            <a ui-sref="showEpisodes({ id: <% show.id %> })">
+                <div class="well">
+                    <div>
+                        <img ng-src="<% show.image_src %>" class="img-responsive"/>
+                    </div>
+                    <div class="show-name">
+                        <h3> <% show.name %> </h3>
+                    </div>
+                </div>
+            </a>
+        </article>
+    </div>
+</div>

@@ -16,13 +16,8 @@ class ShowController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('show.index', compact('shows'));
+        return Response::json($this->repo->getShows());
 	}
-
-    public function all()
-    {
-        return $this->repo->getShows();
-    }
 
 	/**
 	 * Display the specified resource.
@@ -32,8 +27,6 @@ class ShowController extends \BaseController {
 	 */
 	public function show($id)
 	{
-        $show = $this->repo->getShow($id);
-
-		return View::make('show.show', compact('show'));
+        return Response::json($this->repo->getShow($id));
 	}
 }

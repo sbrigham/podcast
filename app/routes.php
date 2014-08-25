@@ -2,7 +2,7 @@
 
 Route::filter('admin', function()
 {
-    if (! Auth::user()->hasRole('admin')) {
+    if (! Auth::check() || ! Auth::user()->hasRole('admin')) {
         return Redirect::to('/');
     }
 ;});
@@ -41,11 +41,22 @@ Route::get('register', 'RegistrationController@create');
 
 Route::resource('session', 'EpisodeSessionController', ['only' => ['index', 'store']]);
 
-Route::get('/', ['as'=>'home', 'uses' => 'ShowController@index']);
-Route::get('/env', function(){
-    exit('poo');
+Route::get('/', function() {
+    return View::make('index');
 });
 
+
+// API FOR SHOWS AND EPISODES
+
+// TODO have anuglar take care of routes... just use API
+Route::group(['prefix' => 'api'], function() {
+    Route::get('show/{show_id}', 'ShowController@show');
+    Route::get('shows', 'ShowController@index');
+    Route::get('show/{show_id}/episodes', 'EpisodeController@index');
+    Route::get('episode/{episode_id}', 'EpisodeController@show'); // TODO controller function to be resourcefully named
+});
+
+// TODO clean up these routes / change to be more intuative
 Route::get('show', 'ShowController@index');
 Route::get('shows',['as' =>'shows', 'uses' => 'ShowController@index']);
 Route::get('show/all', 'ShowController@all');

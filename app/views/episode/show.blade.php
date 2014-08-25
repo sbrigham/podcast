@@ -5,7 +5,6 @@
 {{ HTML::style('css/star.rating.css'); }}
 
 <style>
-
     input[name=rating]:hover {
         cursor: pointer;
     }
@@ -32,20 +31,19 @@
 </style>
 
 <div class="container well">
-    <article>
+    <article ng-controller="episodeController" ng-init="episode_id={{ $episode['id'] }}">
         <div class="col-md-3 fluid-container">
             <div id="episode-img" class="fluid-container">
-                @if($episode['image_src'] != null)
-                <img src ="{{ $episode['image_src'] }}" class="img-responsive"/>
-                @else
-                <img src ="{{ $show['image_src'] }}" class="img-responsive"/>
-                @endif
+                <img ng-src ="<% episode.image_src %>" class="img-responsive"/>
+            </div>
+            <div>
+                {{ HTML::linkRoute('show', 'View Episodes', ['show_id' => $episode->show()->first()->id]) }}
             </div>
         </div>
         <div class="col-md-9">
             <div id="episode-head">
                 <div class="episode-date col-md-8">
-                    {{ date('F jS, Y', strtotime($episode['published_at'])) }}
+                    <% episode.published_at %>
                 </div>
                 <div id="episode-rating" class="row col-md-4">
                 <span class="star-rating">
@@ -58,10 +56,10 @@
                 </div>
             </div>
             <div id="episode-name">
-                <h1> {{ $episode['name'] }}</h1>
+                <h1> <% episode.name %> </h1>
             </div>
             <hr>
-            <div id="episode-desc"> {{ strip_tags($episode['description']) }} </div>
+            <div id="episode-desc"> <% episode.description %> </div>
             <div id="episode-src" class="container">
                 <audio id="episode" controls preload="auto">
                     <source src="{{ $episode['src'] }}" type="audio/mpeg"/>
@@ -69,23 +67,12 @@
             </div>
         </div>
     </article>
-    <hr>
-
-    <div class="comments">
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'topodcasts'; // required: replace example with your forum shortname
-            var disqus_identifier = "{{ $episode['id'] }}";
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-                var s = document.createElement('script'); s.async = true;
-                s.type = 'text/javascript';
-                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-            }());
-        </script>
-    </div>
 </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script> <!-- TODO include locally -->
+<script src="/js/podcast/controllers/mainCtrl.js"></script> <!-- load our controller -->
+<script src="/js/podcast/services/podcastService.js"></script> <!-- load our service -->
+<script src="/js/podcast/app.js"></script> <!-- load our application -->
 
 @if( Auth::check())
 <script src="/js/podcast/audio_session.js"></script>

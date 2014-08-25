@@ -1,9 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<link rel="stylesheet" type="text/css" href="css/star.rating.css"/>
+<link rel="stylesheet" type="text/css" href="css/podcast/episode/show.css"/>
 
-</body>
-</html>
+<div class="container well">
+    <div class="col-md-4" ng-include src="'/partials/show/show.html'"></div>
+    <div class="col-md-8">
+        <div class="container-fluid">
+            <div id="episode-head">
+                <div class="episode-date col-md-8">
+                    <% episode.published_at | date: 'fullDate'%>
+                </div>
+                <div id="episode-rating" class="row col-md-4">
+                <span class="star-rating">
+                  <input type="radio" name="rating" value="1"><i></i>
+                  <input type="radio" name="rating" value="2"><i></i>
+                  <input type="radio" name="rating" value="3"><i></i>
+                  <input type="radio" name="rating" value="4"><i></i>
+                  <input type="radio" name="rating" value="5"><i></i>
+                </span>
+                </div>
+            </div>
+            <div id="episode-name">
+                <h2 style="font-size: 35px"> <% episode.name %> </h2>
+            </div>
+            <hr>
+            <div id="episode-desc"> <% episode.description %> </div>
+            <div id="episode-src" class="container">
+                <audio id="episode" ng-src="<% episode.src | trusted %>" controls preload="auto"></audio>
+            </div>
+        </div>
+        <!--<div class="container-fluid">-->
+            <!--<div id="episode-img" class="fluid-container">-->
+                <!--<img ng-src ="<% episode.image_src %>" class="img-responsive"/>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div ng-show="false">
+    <script src="js/podcast/audio_session.js"></script>
+    <script>
+        //$("input[name=rating][value=<% episode.user_rating%>]").attr('checked', 'checked');
+        $('input[name=rating]').on('change', function() {
+            var rating = this.value;
+
+            var data = {
+                "episode_id": "{{ $episode['id'] }}",
+                "rating"    : rating
+            };
+
+//            $.post("{{ URL::route('episode.rating') }}", data, function() {
+//                console.log('Update Rating');
+//            });
+        });
+
+//        new AudioSession($('#episode'), {
+//            episode_id      : "{{ $episode['id'] }}",
+//            audio_id        : "{{ $episode['id'] }}",
+//            get_session_url : "{{ URL::route('session.index', ['episode' => $episode['id']]) }}",
+//            set_session_url : "{{ URL::route('session.store') }}"
+//        });
+    </script>
+</div>

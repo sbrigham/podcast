@@ -1,0 +1,27 @@
+input[name=rating]:hover {
+    cursor: pointer;
+}
+
+#episode-src audio {
+    width: 100%;
+}
+hr {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.episode-date {
+    color: #32CD32;
+    font-size: 20px;
+    line-height: 50px;
+    vertical-align: bottom;
+}
+
+#episode-desc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#episode-name {
+    padding-top: 20px;
+}

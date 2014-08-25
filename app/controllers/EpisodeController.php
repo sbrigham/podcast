@@ -25,10 +25,9 @@ class EpisodeController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($show_id)
 	{
-        $show_id = Input::get('show');
-        return $this->episode_service->getEpisodes($show_id);
+        return Response::json($this->episode_service->getEpisodes($show_id));
 	}
 
 	/**
@@ -39,14 +38,6 @@ class EpisodeController extends \BaseController {
 	 */
 	public function show($episode_id)
 	{
-        $episode = $this->episode_service->getEpisode($episode_id);
-        $episode['average_rating'] = $this->episode_service->getEpisodeAverageRating($episode_id);
-
-        if (Auth::check()) {
-            $episode['user_rating'] = $this->episode_service->getEpisodeRating($episode_id, Auth::user()->id);
-        }
-
-        $show = $episode->show()->getResults();
-        return View::make('episode.show', compact('episode', 'show'));
+        return Response::json($this->episode_service->getEpisode($episode_id));
 	}
 }

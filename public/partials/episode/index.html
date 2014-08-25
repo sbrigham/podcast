@@ -1,0 +1,20 @@
+<div class="container">
+    <div ng-include src="'/partials/show/show.html'" class="col-md-4"> </div>
+    <div class="col-md-8">
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Search Episodes" ng-model="search">
+        </div>
+        <div>
+            <div class="row" ng-repeat="episode in episodes | filter:search">
+                <a ui-sref="episode({ show_id: show.id, episode_id: <% episode.id %> })">
+                    <div class="well">
+                        <div> <small> <% episode.published_at | date: 'fullDate'%> </small> </div>
+                        <div class="episode-name">
+                            <h3> <% episode.name %> </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

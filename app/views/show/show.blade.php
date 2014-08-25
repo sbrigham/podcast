@@ -27,8 +27,8 @@
         }
     </style>
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
-    <script src="js/podcast/controllers/mainCtrl.js"></script> <!-- load our controller -->
-    <script src="js/podcast/services/podcastService.js"></script> <!-- load our service -->
-    <script src="js/podcast/app.js"></script> <!-- load our application -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script> <!-- TODO include locally -->
+    <script src="/js/podcast/controllers/mainCtrl.js"></script> <!-- load our controller -->
+    <script src="/js/podcast/services/podcastService.js"></script> <!-- load our service -->
+    <script src="/js/podcast/app.js"></script> <!-- load our application -->
 @stop
