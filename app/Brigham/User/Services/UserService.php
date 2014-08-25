@@ -12,14 +12,6 @@ class UserService {
 
     public function make($user) {
         $user = $this->user_repo->create($user);
-
-
-        // send email and do whatever else
-
-
-        //
-
-
         return $user;
     }
 } 
