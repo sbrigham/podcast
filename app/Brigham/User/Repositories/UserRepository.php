@@ -7,7 +7,6 @@ use User;
 
 class UserRepository implements UserRepositoryInterface {
     public function create($user) {
-        $user['password'] = Hash::make($user['password']);
         $user = User::create($user);
         $user->addRole('public');
         return $user;
