@@ -1,13 +1,14 @@
-angular.module('podcastApp.controllers').controller('EpisodesController', function($scope, $stateParams, Podcast) {
+angular.module('podcastApp.controllers').controller('EpisodeListController',function($scope, $stateParams, $filter, Show, EpisodeList) {
     $scope.show_id = $stateParams.id;
+    var orderBy = $filter('orderBy');
 
-    Podcast.getShow($scope.show_id)
+    Show.get($scope.show_id)
         .success(function(data) {
             $scope.show = data;
         });
 
     $scope.loading = true;
-    Podcast.getEpisodes($scope.show_id)
+    EpisodeList.get($scope.show_id)
         .success(function(data) {
             for (var x=0; x<data.length; x++) {
                 data[x].published_at = new Date(data[x].published_at);
@@ -15,4 +16,8 @@ angular.module('podcastApp.controllers').controller('EpisodesController', functi
             $scope.episodes = data;
             $scope.loading = false;
         });
+
+    $scope.order = function(predicate, reverse) {
+        $scope.episodes = orderBy($scope.episodes, predicate, reverse)
+    };
 });

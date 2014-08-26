@@ -1,6 +1,6 @@
-angular.module('podcastApp.controllers').controller('ShowsController', function($scope, Podcast) {
+angular.module('podcastApp.controllers').controller('ShowListController', function($scope, ShowList) {
     $scope.loading = true;
-    Podcast.getShows()
+    ShowList.get()
         .success(function(data) {
             $scope.shows = data;
             $scope.loading = false;

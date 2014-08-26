@@ -1,4 +1,4 @@
-var podcastApp = angular.module('podcastApp', ['podcastApp.controllers', 'ui.router','podcastService'], function($interpolateProvider) {
+var podcastApp = angular.module('podcastApp', ['podcastApp.controllers', 'ui.router','episodeService', 'episodeListService', 'showService', 'showListService'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
@@ -20,12 +20,12 @@ podcastApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('shows', {
             url: "",
-            controller: 'ShowsController',
+            controller: 'ShowListController',
             templateUrl: 'partials/show/index.html'
         })
         .state('showEpisodes', {
             url: '/show/{id}/episodes',
-            controller: 'EpisodesController',
+            controller: 'EpisodeListController',
             templateUrl: 'partials/episode/index.html'
         })
         .state('episode', {

@@ -8,6 +8,9 @@
             <i class="fa fa-5x fa-spinner fa-spin"></i>
         </div>
         <div>
+            <button ng-model='most_recent_filter' class="btn-primary" ng-click="reverse=!reverse;order('published_at',reverse)"> How Recent </button>
+        </div>
+        <div>
             <div class="row" ng-repeat="episode in episodes | filter:search">
                 <a ui-sref="episode({ show_id: show.id, episode_id: <% episode.id %> })">
                     <div class="well">
