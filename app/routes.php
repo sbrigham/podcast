@@ -42,7 +42,13 @@ Route::get('register', 'RegistrationController@create');
 Route::resource('session', 'EpisodeSessionController', ['only' => ['index', 'store']]);
 
 Route::get('/', function() {
-    return View::make('index');
+
+    $user = json_encode(null);
+    if(Auth::check()) {
+        $user = Auth::user()->get()->toJson();
+    }
+
+    return View::make('index')->with('user', $user);
 });
 
 
@@ -54,6 +60,9 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('shows', 'ShowController@index');
     Route::get('show/{show_id}/episodes', 'EpisodeController@index');
     Route::get('episode/{episode_id}', 'EpisodeController@show'); // TODO controller function to be resourcefully named
+
+    Route::get('episode/{episode_id}/session', 'EpisodeSessionController@index');
+    Route::post('episode/{episode_id}/session', 'EpisodeSessionController@store');
 });
 
 // TODO clean up these routes / change to be more intuative

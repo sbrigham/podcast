@@ -1,0 +1,13 @@
+<div ng-controller="AudioSessionController" id="sb-audio">
+    <div class="sb-audio-controls container-fluid">
+        <div class="col col-md-6">
+            <button ng-click='rw(30)' style="width:100%" class="btn btn-primary"> -30 Seconds </button>
+        </div>
+        <div class="col col-md-6">
+            <button ng-click='ff(30)' style="width:100%" class="btn btn-success"> +30 Seconds </button>
+        </div>
+    </div>
+    <div class="container-fluid" style ="padding-top:10px">
+        <audio ng-src="{{ src | trusted }}" controls preload="auto">  </audio>
+    </div>
+</div>

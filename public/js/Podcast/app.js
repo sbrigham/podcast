@@ -1,7 +1,15 @@
-var podcastApp = angular.module('podcastApp', ['podcastApp.controllers', 'ui.router','episodeService', 'episodeListService', 'showService', 'showListService'], function($interpolateProvider) {
+var podcastApp = angular.module('podcastApp', ['podcastApp.controllers', 'UserService','sbAudioDirective','ui.router','episodeService', 'episodeListService', 'showService', 'showListService'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
+
+podcastApp.controller('MainCtrl', function($scope, User) {
+    $scope.setUser = function (user) {
+        if (user!=null) {
+            User.setUser(user);
+        }
+    }
+})
 
 podcastApp.filter('trusted', ['$sce', function ($sce) {
     return function(url) {

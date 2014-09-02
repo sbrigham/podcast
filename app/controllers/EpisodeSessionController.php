@@ -12,17 +12,20 @@ class EpisodeSessionController extends \BaseController {
         $this->sessionRepository = $sessionRepository;
     }
 
-	public function index()
+	public function index($episode_id)
 	{
         if (! Auth::check()) {
             App::abort(403);
         }
 
-        $episode_id = Input::get('episode');
-
-        $session = $this->sessionRepository->getSession($episode_id, Auth::user()->id);
-
-        return Response::json(['seconds_in' => $session['seconds_in']]);
+        try {
+            $session = $this->sessionRepository->getSession($episode_id, Auth::user()->id);
+            $seconds_in = $session['seconds_in'];
+        } catch (ModelNotFoundException $e) {
+            // There is no session for the logged in user
+            $seconds_in = 0;
+        }
+        return Response::json(['seconds_in' => $seconds_in]);
 	}
 
 	public function store()

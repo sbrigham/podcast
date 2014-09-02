@@ -9,7 +9,6 @@ angular.module('podcastApp.controllers').controller('EpisodeController', functio
     Episode.get($scope.episode_id)
         .success(function(data) {
             data.published_at = new Date(data.published_at); // Convert date to timestamp
-
             $scope.episode = data;
             $scope.loading = false;
         });

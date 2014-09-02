@@ -25,7 +25,8 @@
             <hr>
             <div id="episode-desc"> <% episode.description %> </div>
             <div id="episode-src" class="container">
-                <audio id="episode" ng-src="<% episode.src | trusted %>" controls preload="auto"></audio>
+                <sb-audio src="episode.src">
+                </sb-audio>
             </div>
         </div>
         <!--<div class="container-fluid">-->
