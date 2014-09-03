@@ -29,16 +29,10 @@
                 </sb-audio>
             </div>
         </div>
-        <!--<div class="container-fluid">-->
-            <!--<div id="episode-img" class="fluid-container">-->
-                <!--<img ng-src ="<% episode.image_src %>" class="img-responsive"/>-->
-            <!--</div>-->
-        <!--</div>-->
     </div>
 </div>
 
 <div ng-show="false">
-    <script src="js/podcast/audio_session.js"></script>
     <script>
         //$("input[name=rating][value=<% episode.user_rating%>]").attr('checked', 'checked');
         $('input[name=rating]').on('change', function() {
@@ -53,12 +47,5 @@
 //                console.log('Update Rating');
 //            });
         });
-
-//        new AudioSession($('#episode'), {
-//            episode_id      : "{{ $episode['id'] }}",
-//            audio_id        : "{{ $episode['id'] }}",
-//            get_session_url : "{{ URL::route('session.index', ['episode' => $episode['id']]) }}",
-//            set_session_url : "{{ URL::route('session.store') }}"
-//        });
     </script>
 </div>
