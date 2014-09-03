@@ -3,8 +3,9 @@
 @section('content')
     <div ng-controller="MainCtrl" ng-init="setUser({{{ $user }}})">
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
-        <script src="js/vendor/angular/angular.js"></script>
-        <script src="js/vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="js/vendor/angular/angular.min.js"></script>
+        <script src="js/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="js/vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
         <script src="js/podcast/app.js"></script>
         <script src="js/podcast/controllers/mainCtrl.js"></script>
         <script src="js/podcast/services/showListService.js"></script>
