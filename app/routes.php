@@ -10,12 +10,6 @@ Route::filter('admin', function()
 App::bind('Brigham\Podcast\Repositories\PodcastRepositoryInterface', 'Brigham\Podcast\Repositories\EloquentPodcastRepository');
 App::bind('Brigham\Podcast\Services\PodcastServiceInterface', 'Brigham\Podcast\Services\PodcastService');
 
-Route::get('/mail', function(){
-   Mail::send('emails.errors.test', ['message' => 'Whatever'], function($message){
-       $message->to('sdbrigha@buffalo.edu', 'Spencer')->subject('Welcome!');
-   });
-});
-
 // Admin Routes
 
 Route::group(['prefix' => 'admin', 'before' => 'admin'], function() {
@@ -51,21 +45,19 @@ Route::get('/', function() {
     return View::make('index')->with('user', $user);
 });
 
-
 // API FOR SHOWS AND EPISODES
-
-// TODO have anuglar take care of routes... just use API
 Route::group(['prefix' => 'api'], function() {
     Route::get('show/{show_id}', 'ShowController@show');
     Route::get('shows', 'ShowController@index');
     Route::get('show/{show_id}/episodes', 'EpisodeController@index');
-    Route::get('episode/{episode_id}', 'EpisodeController@show'); // TODO controller function to be resourcefully named
+    Route::get('episode/{episode_id}', 'EpisodeController@show');
 
     Route::get('episode/{episode_id}/session', 'EpisodeSessionController@index');
     Route::post('episode/{episode_id}/session', 'EpisodeSessionController@store');
+
+    Route::post('episode/{episode_id}/rating', 'EpisodeRatingController@store');
 });
 
-// TODO clean up these routes / change to be more intuative
 Route::get('show', 'ShowController@index');
 Route::get('shows',['as' =>'shows', 'uses' => 'ShowController@index']);
 Route::get('show/all', 'ShowController@all');
@@ -74,12 +66,9 @@ Route::get('episodes', ['as' => 'episodes', 'uses' => 'EpisodeController@index']
 Route::get('episode/{episode}', ['as' => 'episode.id', 'uses' => 'EpisodeController@show']);
 Route::get('episodes/all', 'EpisodeController@all');
 
-// Brigham Front Routes
 Route::get('/{show_id}/about', 'ShowController@show');
 Route::get('/{show_id}', [ 'as'=> 'show', 'uses' => 'ShowController@show']);
 Route::get('/{show_id}/episode/{episode_id}', ['as' => 'episode', 'uses' => 'EpisodeController@show']);
-
-// Handle 404 Error
 
 App::missing(function($exception)
 {

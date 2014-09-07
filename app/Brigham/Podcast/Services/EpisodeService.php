@@ -5,6 +5,7 @@ use Brigham\Podcast\Repositories\EpisodeRatingRepository;
 use Brigham\Podcast\Repositories\EpisodeRepository;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 class EpisodeService {
@@ -27,6 +28,11 @@ class EpisodeService {
         $episode->name = html_entity_decode($episode->name);
         $episode->description = strip_tags($episode->description);
         $episode->description = html_entity_decode($episode->description);
+        $episode->rating = $episode->rating()->avg('rating');
+
+        if (Auth::check()) {
+            $episode->user_rating = $this->getEpisodeRating($episode_id, Auth::user()->id);
+        }
         return $episode;
     }
 

@@ -1,4 +1,6 @@
-var podcastApp = angular.module('podcastApp', ['podcastApp.controllers', 'UserService','sbAudioDirective','ui.router','episodeService', 'episodeListService', 'showService', 'showListService'], function($interpolateProvider) {
+var podcastApp = angular.module('podcastApp', [ 'podcastApp.controllers', 'UserService','sbAudioDirective','sbRatingDirective', 'ui.router','episodeService',
+    'episodeListService', 'showService', 'showListService'], function($interpolateProvider) {
+
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
@@ -16,6 +18,25 @@ podcastApp.filter('trusted', ['$sce', function ($sce) {
         return $sce.trustAsResourceUrl(url);
     };
 }]);
+
+podcastApp.filter('range', function() {
+    return function(input, total) {
+        total = parseInt(total);
+        for (var i=total; i>0; i--)
+            input.push(i);
+        return input;
+    };
+});
+
+podcastApp.filter('rating', function() {
+    return function (input) {
+        if (input == undefined) {
+            return 'No Rating';
+        }
+
+        return Math.round(input * 100) / 100 +' Stars';
+    };
+});
 
 // ROUTING
 

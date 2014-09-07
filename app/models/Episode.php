@@ -15,6 +15,11 @@ class Episode extends \Eloquent {
         return $this->belongsTo('Show');
     }
 
+    public function rating()
+    {
+        return $this->hasMany('EpisodeRating');
+    }
+
     public function sourceIsActive() {
         try {
 

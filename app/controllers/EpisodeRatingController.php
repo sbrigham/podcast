@@ -12,13 +12,12 @@ class EpisodeRatingController extends \BaseController {
         $this->episodeRatingRepository = $episodeRatingRepository;
     }
 
-	public function store()
+	public function store($episode_id)
 	{
         if (! Auth::check()) {
             App::abort(403);
         }
 
-        $episode_id = Input::get('episode_id');
         $rating = Input::get('rating');
         $user_id = Auth::user()->id;
 

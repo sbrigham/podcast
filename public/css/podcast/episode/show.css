@@ -22,6 +22,11 @@ hr {
     padding-bottom: 10px;
 }
 
-#episode-name {
-    padding-top: 20px;
+#episode-name h1 , #episode-rating h1 {
+    font-size: 45px;
+    margin-top:0px;
+}
+
+#episode-rating h1 {
+    color: #ff0033;
 }

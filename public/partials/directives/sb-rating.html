@@ -1,0 +1,34 @@
+<div ng-controller="RatingController" id="sb-rating">
+    <span class="episode-rating" title="Your Rating">
+        <i class="star fa fa-star" ng-mouseleave="leaveHoverStar(star)" ng-mouseover="hoverStar(star)" ng-class="star.class" ng-click="clickStar(star)" ng-repeat="star in stars"></i>
+    </span>
+</div>
+
+<style>
+    span i:hover {
+        cursor:pointer;
+    }
+    .rating span.star {
+        display: inline-block;
+    }
+
+    .rating span.star:hover {
+        cursor: pointer;
+    }
+
+    .star  {
+        color: #777777;
+        padding-right: 1px;
+    }
+
+    /*.rating span.star:hover:before, .rating span.star:hover ~ span.star:before*/
+
+    .rating-star-active {
+        color: #e3cf7a;
+        padding-right: 1px;
+    }
+
+    .rating {
+        font-size: 45px;
+    }
+</style>
