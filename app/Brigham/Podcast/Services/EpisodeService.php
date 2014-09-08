@@ -66,6 +66,11 @@ class EpisodeService {
 
         foreach($episodes as $index => $value) {
             $episodes[$index]->name = html_entity_decode($episodes[$index]->name);
+            $episodes[$index]->rating = $episodes[$index]->rating()->avg('rating');
+
+            if (Auth::check()) {
+                $episodes[$index]->user_rating = $this->getEpisodeRating($episodes[$index]->id, Auth::user()->id);
+            }
         }
         return $episodes;
     }

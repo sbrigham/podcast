@@ -1,0 +1,11 @@
+.episode a {
+    color: #000;
+}
+
+.episode-published-at {
+    font-size: 12px;
+}
+
+.episode a:hover {
+    text-decoration: none;
+}

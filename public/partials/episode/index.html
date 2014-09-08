@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="css/podcast/episode/index.css"/>
 <div class="container">
     <div ng-include src="'/partials/show/show.html'" class="col-md-4"> </div>
     <div class="col-md-8">
@@ -7,16 +8,28 @@
         <div ng-show='loading' style="text-align: center">
             <i class="fa fa-5x fa-spinner fa-spin"></i>
         </div>
+        <!--<div>-->
+            <!--<button ng-model='most_recent_filter' class="btn-primary" ng-click="reverse=!reverse;order('published_at',reverse)"> How Recent </button>-->
+        <!--</div>-->
         <div>
-            <button ng-model='most_recent_filter' class="btn-primary" ng-click="reverse=!reverse;order('published_at',reverse)"> How Recent </button>
-        </div>
-        <div>
-            <div class="row" ng-repeat="episode in episodes | filter:search">
+            <div style="margin-bottom: 5px" class="episode row well" ng-repeat="episode in episodes | filter:search">
                 <a ui-sref="episode({ show_id: show.id, episode_id: <% episode.id %> })">
-                    <div class="well">
-                        <div> <small> <% episode.published_at | date: 'fullDate'%> </small> </div>
-                        <div class="episode-name">
-                            <h3> <% episode.name %> </h3>
+                    <div>
+                        <div class="col col-md-10">
+                            <div class="episode-published-at">
+                                <% episode.published_at | date: 'fullDate'%>
+                            </div>
+                            <div class="episode-name">
+                                <h3> <% episode.name %> </h3>
+                            </div>
+                        </div>
+                        <div class="col col-md-2 episode-name">
+                            <button type="button" class="btn btn-default" title="Average Rating">
+                                <span class="glyphicon glyphicon-star"></span> <% episode.rating | rating %>
+                            </button>
+                            <button type="button" class="btn btn-default" title="Average Rating">
+                                <span class="glyphicon glyphicon-time"></span> <% episode.duration | duration %>
+                            </button>
                         </div>
                     </div>
                 </a>

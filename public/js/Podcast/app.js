@@ -38,8 +38,22 @@ podcastApp.filter('rating', function() {
     };
 });
 
-// ROUTING
+podcastApp.filter('duration', function() {
+    return function(input) {
+        if (input == null) {
+            return 'N/A';
+        }
 
+        var sec_num = parseInt(input, 10); // don't forget the second parm
+        var hours = Math.floor(sec_num / 3600);
+        var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+
+        var time = hours + 'hr ' + minutes + 'min';
+        return time;
+    }
+});
+
+// ROUTING
 podcastApp.config(function($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
