@@ -19,11 +19,11 @@ gulp.task('cept_phpunit', function(){
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/tests/*.php', ['phpunit']);
+    gulp.watch(['app/tests/*.php', 'app/Brigham/**/*.php'], ['phpunit']);
 });
 
 gulp.task('watch_cept', function() {
-    gulp.watch('tests/functional/*.php', ['cept_phpunit']);
+    gulp.watch(['app/tests/*.php'], ['cept_phpunit']);
 });
 
 gulp.task('default', ['watch']);
